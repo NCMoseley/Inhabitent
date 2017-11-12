@@ -21,7 +21,7 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-             <i class="fa fa-bath" aria-hidden="true"></i>
+             
              
 				<?php get_template_part( 'template-parts/content' ); ?>
 

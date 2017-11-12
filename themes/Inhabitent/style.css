@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Theme Name: inhabitents
+Theme URI: 
+Author: Nathan Moseley
+Author URI: https://github.com/NCMoseley
+Description: A Theme inspired by Red Academy Starter theme, and adapted to the Inhabitents Project.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -666,3 +666,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+p.site-description {
+  display: none; }
+
+a {
+  display: none; }
+
+img {
+  width: 1150px;
+  height: auto; }
+
+#post-80 img {
+  background: cover; }
