@@ -1,23 +1,62 @@
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 
-/* Front page */
-
-p.site-description{
-    display: none;
+.site-content {
+    display: flex;
+    margin: auto;
+    width: 1120px;
 }
 
 a {
     display: none;
 }
+#colophon.site-footer {
+    display: flex;
+    background: url(../../images/dark-wood.png);
+    background-size: 512px 512px;
+    color: $color__background-body;
+    height: 400px;
+    width: auto;
 
-img {
-    width: 1150px;
-    height: auto;
 }
-#post-80 img{
-    background: cover;
 
+p.site-description  {
+    display: none;
+}
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.site-header.reverse-header {
+    background-color: transparent;
+    border-bottom: 0;
+    position: absolute;
+    text-shadow: 1px 1px 2px #323232;
+}
+
+.site-header.reverse-header h1 {
+    background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px;
+}
+
+#site-navigation.main-navigation a{
+    color: red;
+    padding: 1rem;
+    font-family: $font__3;
+    text-shadow: 1px 1px 2px #323232;
+}
+
+.home .home-hero {
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 1120px;
 }

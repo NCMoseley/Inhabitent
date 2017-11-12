@@ -1,8 +1,7 @@
 <?php
-/**
- * The main template file.
+/*
  *
- * @package RED_Starter_Theme
+ * @package
  */
 
 get_header(); ?>
