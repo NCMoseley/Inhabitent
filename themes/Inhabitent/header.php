@@ -29,7 +29,6 @@
                 <div class="container">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					
-
 						<a href="http://localhost:8888/inhabitent/" rel="home">
 								<h1 class="tent-logo"></h1></a>
                    

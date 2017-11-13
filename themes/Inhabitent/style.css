@@ -713,9 +713,6 @@ object {
   .site-content a {
     display: none; }
 
-#secondary {
-  display: none; }
-
 .home .home-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,6 +806,11 @@ h1.tent-logo {
   height: 40rem;
   padding-right: 5rem; }
 
+.adventure-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .canoe {
   background: url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
   background-size: cover;
@@ -843,6 +845,26 @@ h1.tent-logo {
   height: 270px;
   width: 270px;
   z-index: -1; }
+
+a.morebutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 250px;
+  background-color: #248a83;
+  margin-left: 6rem;
+  color: #fff;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-decoration: none; }
 
 h1.entry-title {
   display: -webkit-box;

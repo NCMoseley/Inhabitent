@@ -35,7 +35,8 @@ get_header(); ?>
             <li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3><a class="button" href="">READ MORE</a></li>
 		</div><!-- failure -->
           </ul>
-               <p class="more"><a href="http:/" class="button">More Adventures</a></p>
+               <a href="https://www.muchbetteradventures.com/" class="morebutton">More Adventures</a>
+<h4 class="more"></h4>
 		</div> <!-- adventures-container -->
     </section>
 
@@ -58,5 +59,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>
