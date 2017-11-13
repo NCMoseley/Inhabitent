@@ -2,7 +2,7 @@
 .site-content {
     display: flex;
     margin: auto;
-    width: $wide__screen-width;
+    // width: $wide__screen-width;
     a {
     display: none;
 }
@@ -23,7 +23,8 @@
     justify-content: center;
     margin: auto;
     height: 100vh;
-    width: $wide__screen-width;
+    // width: $wide__screen-width;
+    // width: max-content;
 }
 
 p.site-description  {
@@ -38,7 +39,6 @@ p.site-description  {
 #site-navigation.main-navigation {
     display: flex;
     justify-content: flex-end;
-
     position: absolute;
     max-width: 1120px;
 }
@@ -150,7 +150,7 @@ h1.entry-title  {
     justify-content: center;
     margin: auto;
     height: 100vh;
-    width: $wide__screen-width;
+    // width: $wide__screen-width;
 }
 
 // #primary{
@@ -173,6 +173,12 @@ h1.entry-title  {
    text-transform: uppercase;
 
 }
+// Latest Adventures ==============================================================================
+
+
+
+
+
 
 
 // Begin footer ===================================================================================
@@ -181,7 +187,7 @@ h1.entry-title  {
     background: url(../../images/dark-wood.png);
     background-size: 512px 512px;
     color: $color__background-body;
-    width: $wide__screen-width;
+    // width: $wide__screen-width;
 }
 .footer-container {
     display: flex;
