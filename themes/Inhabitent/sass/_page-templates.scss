@@ -2,20 +2,28 @@
 .site-content {
     display: flex;
     margin: auto;
-    width: 1120px;
-}
-
-a {
+    width: 1240px;
+    a {
     display: none;
 }
-#colophon.site-footer {
-    display: flex;
-    background: url(../../images/dark-wood.png);
-    background-size: 512px 512px;
-    color: $color__background-body;
-    height: 400px;
-    width: auto;
+}
+// Sidebar Wiget==================================================================================
+#secondary{
+    display: none;
+}
 
+// Hero Banner==================================================================================
+.home .home-hero {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: 1240px;
 }
 
 p.site-description  {
@@ -23,12 +31,16 @@ p.site-description  {
 }
 .site-header .container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // align-items: center;
+    justify-content: center;
 }
-.main-navigation {
+
+#site-navigation.main-navigation {
     display: flex;
     justify-content: flex-end;
+
+    position: absolute;
+    max-width: 1120px;
 }
 
 .site-header.reverse-header {
@@ -38,25 +50,97 @@ p.site-description  {
     text-shadow: 1px 1px 2px #323232;
 }
 
-.site-header.reverse-header h1 {
-    background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+h1.tent-logo {
+    position: absolute;
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
     background-size: 50px 33px;
-}
+    z-index: 10;
+    font-size: 2em;
+    left: 10px;
+    top: -15px;
+    width: 50px;
+    height: 50px;
+}    
 
 #site-navigation.main-navigation a{
-    color: red;
+    color: $color__background-pre;
     padding: 1rem;
     font-family: $font__3;
     text-shadow: 1px 1px 2px #323232;
+    
 }
 
-.home .home-hero {
-    align-items: center;
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/home-hero.jpg) no-repeat top;
-    background-size: cover,cover;
+// Latest Adventures ==============================================================================
+
+.latest-adventures {
+
+}
+
+
+
+
+
+
+// Begin footer ===================================================================================
+#colophon.site-footer {
     display: flex;
-    flex-direction: column;
+    background: url(../../images/dark-wood.png);
+    background-size: cover;
+    color: $color__background-body;
+    width: auto;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    flex: 1 0 20%;
     width: 1120px;
+    font-family: $font__2;
+    h3 {
+        color: $color__text-orange;
+        font-family: $font__3;
+    }
+    a {
+        text-decoration: none;
+        font-size: 10px;
+        color: $color__brand-grey;
+        align-self: center;
+        padding-left: 1rem;
+    }
+}
+
+.footer-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 0 0 0 6rem;
+    width: 500px;
+    height: 160px;
+    img {
+        width: auto;
+        height: 50px;
+        
+    }
+
+    
+}
+
+.contact-info {
+    margin: 2rem 0 0 3rem;
+
+    p {
+        display: flex;
+        justify-content: flex-start;
+        span {
+            margin: .3rem;
+        }
+    }
+
+}
+.business-hours {
+    margin: 2rem 0 1rem 3rem;
+}
+.copyright {
+    align-self: flex-end;
 }

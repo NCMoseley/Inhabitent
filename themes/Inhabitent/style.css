@@ -242,8 +242,8 @@ th {
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-LightItalic.eot");
-  src: url("Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff"), url("Merriweather-LightItalic.ttf") format("truetype"), url("Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
@@ -256,15 +256,15 @@ th {
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.eot");
-  src: url("Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff"), url("Merriweather-BoldItalic.ttf") format("truetype"), url("Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Bold.eot");
-  src: url("Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff"), url("Merriweather-Bold.ttf") format("truetype"), url("Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -710,20 +710,36 @@ object {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 1120px; }
+  width: 1240px; }
+  .site-content a {
+    display: none; }
 
-a {
+#secondary {
   display: none; }
 
-#colophon.site-footer {
+.home .home-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../../images/dark-wood.png);
-  background-size: 512px 512px;
-  color: #fff;
-  height: 400px;
-  width: auto; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #808080 url(../../images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #808080 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: 1240px; }
 
 p.site-description {
   display: none; }
@@ -732,20 +748,19 @@ p.site-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.main-navigation {
+#site-navigation.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  position: absolute;
+  max-width: 1120px; }
 
 .site-header.reverse-header {
   background-color: transparent;
@@ -753,32 +768,94 @@ p.site-description {
   position: absolute;
   text-shadow: 1px 1px 2px #323232; }
 
-.site-header.reverse-header h1 {
-  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
-  background-size: 50px 33px; }
+h1.tent-logo {
+  position: absolute;
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px;
+  z-index: 10;
+  font-size: 2em;
+  left: 10px;
+  top: -15px;
+  width: 50px;
+  height: 50px; }
 
 #site-navigation.main-navigation a {
-  color: red;
+  color: #eee;
   padding: 1rem;
   font-family: "Novocento";
   text-shadow: 1px 1px 2px #323232; }
 
-.home .home-hero {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #808080 url(../../images/home-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #808080 url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover,cover;
+#colophon.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  background: url(../../images/dark-wood.png);
+  background-size: cover;
+  color: #fff;
+  width: auto; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  width: 1120px; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  width: 1120px;
+  font-family: "Merriweather"; }
+  .footer-container h3 {
+    color: #d99054;
+    font-family: "Novocento"; }
+  .footer-container a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #808080;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 1rem; }
+
+.footer-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0 0 6rem;
+  width: 500px;
+  height: 160px; }
+  .footer-image img {
+    width: auto;
+    height: 50px; }
+
+.contact-info {
+  margin: 2rem 0 0 3rem; }
+  .contact-info p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .contact-info p span {
+      margin: .3rem; }
+
+.business-hours {
+  margin: 2rem 0 1rem 3rem; }
+
+.copyright {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
