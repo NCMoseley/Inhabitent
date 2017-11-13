@@ -72,9 +72,7 @@ h1.tent-logo {
 
 // Latest Adventures ==============================================================================
 .adventures-section {
-    
-    // display: flex;
-    // justify-content: center;
+   
     h2{
         font-family: $font__3;
         font-weight: lighter;
@@ -82,6 +80,7 @@ h1.tent-logo {
         font-size: 38.5px;
     }
 }
+
 .adventures-container ul{
     display: flex;
     box-sizing: border-box;
@@ -91,15 +90,7 @@ h1.tent-logo {
     flex-wrap: wrap;
     width: $wide__screen-width;
     height: 40rem;
-}
-// .adventures-list {
-//      display: flex;
-//      flex-direction: row;
-//     flex-wrap: wrap;
-// }
-.adventures-container li:first-child {
-    // border-right: 20px solid #fff;
-    // width: 50%;
+    padding-right: 5rem;
 }
 
 
@@ -188,7 +179,7 @@ h1.entry-title  {
 #colophon.site-footer {
     display: flex;
     background: url(../../images/dark-wood.png);
-    background-size: cover;
+    background-size: 512px 512px;
     color: $color__background-body;
     width: $wide__screen-width;
 }
@@ -242,7 +233,7 @@ h1.entry-title  {
 
 }
 .business-hours {
-    margin: 2rem 0 2rem 3rem;
+    margin: 2rem 0 1rem 3rem;
 }
 .copyright {
     align-self: flex-end;
