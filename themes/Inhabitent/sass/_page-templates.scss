@@ -2,7 +2,7 @@
 .site-content {
     display: flex;
     margin: auto;
-    width: 1240px;
+    width: $wide__screen-width;
     a {
     display: none;
 }
@@ -23,7 +23,7 @@
     justify-content: center;
     margin: auto;
     height: 100vh;
-    width: 1240px;
+    width: $wide__screen-width;
 }
 
 p.site-description  {
@@ -71,14 +71,117 @@ h1.tent-logo {
 }
 
 // Latest Adventures ==============================================================================
-
-.latest-adventures {
-
+.adventures-section {
+    
+    // display: flex;
+    // justify-content: center;
+    h2{
+        font-family: $font__3;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 38.5px;
+    }
+}
+.adventures-container ul{
+    display: flex;
+    box-sizing: border-box;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: $wide__screen-width;
+    height: 40rem;
+}
+// .adventures-list {
+//      display: flex;
+//      flex-direction: row;
+//     flex-wrap: wrap;
+// }
+.adventures-container li:first-child {
+    // border-right: 20px solid #fff;
+    // width: 50%;
 }
 
 
+.canoe {
+    background: url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background-size: cover;
+    height: 540px;
+    width: 540px;
+    z-index: -1;
+    // flex: 1;
+}
 
+.beach {
+    background: url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 540px;
+    z-index: -1;
+    // flex: 0 0 25%;
+}
+.failure{
+    display: flex;
+    border-top: 20px solid #fff;
+}
+.view {
+    background: url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background-size: cover;
+    height: 270px;
+    width: 270px;
+    z-index: -1;
+    border-right: 20px solid #fff;
+    // flex: 1;
+}
+.sky {
+    background: url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background-size: cover;
+    height: 270px;
+    width: 270px;
+    z-index: -1;
+    // flex: 1;
 
+}
+// Begin About  ===================================================================================
+
+h1.entry-title  {
+    display: flex;
+    align-items: center;
+    font-family: $font__3;
+    font-size: 48px;
+    text-transform: uppercase;
+    // font-weight: lighter;
+    flex: 1 1;
+    color: $color__background-body;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/about-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: $wide__screen-width;
+}
+
+// #primary{
+//     display: flex;
+//     justify-content: center;
+// }
+.entry-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 13.5rem 1rem 13.5rem;
+    font-family: $font__2;
+
+}
+
+.entry-content h2{
+   text-align: center;
+   font-family: $font__3;
+   font-size: 34px;
+   text-transform: uppercase;
+
+}
 
 
 // Begin footer ===================================================================================
@@ -87,7 +190,7 @@ h1.tent-logo {
     background: url(../../images/dark-wood.png);
     background-size: cover;
     color: $color__background-body;
-    width: auto;
+    width: $wide__screen-width;
 }
 .footer-container {
     display: flex;
@@ -95,7 +198,7 @@ h1.tent-logo {
     justify-content: center;
     flex-wrap: wrap;
     flex: 1 0 20%;
-    width: 1120px;
+    width: $base__screen-width;
     font-family: $font__2;
     h3 {
         color: $color__text-orange;
@@ -139,8 +242,11 @@ h1.tent-logo {
 
 }
 .business-hours {
-    margin: 2rem 0 1rem 3rem;
+    margin: 2rem 0 2rem 3rem;
 }
 .copyright {
     align-self: flex-end;
+    font-family: $font__3;
+    margin: 2rem 0 2rem 0;
+    
 }

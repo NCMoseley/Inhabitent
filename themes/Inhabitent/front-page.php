@@ -22,13 +22,23 @@ get_header(); ?>
             <section class="home-hero">
             <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
             </section>
-			<section class="adventures-section">
+	<section class="adventures-section">
                            <h2>Latest Adventures</h2>
-			   <div class="latest-adventures"></div>
-               <p class="see-more">
-                  <a href="http:/" class="btn">More Adventures</a>
-               </p>
-            </section>
+		              <!-- <div class="latest-adventures"></div> -->
+
+        <div class="adventures-container">
+          <ul class="adventure-list">
+            <li class="canoe"><h3><a href="">Getting Back to Nature in a Canoe</a></h3><a     class="button" href="">READ MORE</a></li>
+            <li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3><a class="button" href="">READ MORE</a></li>
+		 <div class="failure">
+            <li class="view"><h3><a href="">Taking in the View at Big Mountain</a></h3><a class="button" href="">READ MORE</a></li>
+            <li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3><a class="button" href="">READ MORE</a></li>
+		</div><!-- failure -->
+          </ul>
+               <p class="more"><a href="http:/" class="button">More Adventures</a></p>
+		</div> <!-- adventures-container -->
+    </section>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
              

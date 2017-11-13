@@ -785,6 +785,114 @@ h1.tent-logo {
   font-family: "Novocento";
   text-shadow: 1px 1px 2px #323232; }
 
+.adventures-section h2 {
+  font-family: "Novocento";
+  font-weight: lighter;
+  text-align: center;
+  font-size: 38.5px; }
+
+.adventures-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1240px;
+  height: 40rem; }
+
+.canoe {
+  background: url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 540px;
+  z-index: -1; }
+
+.beach {
+  background: url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 540px;
+  z-index: -1; }
+
+.failure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 20px solid #fff; }
+
+.view {
+  background: url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 270px;
+  z-index: -1;
+  border-right: 20px solid #fff; }
+
+.sky {
+  background: url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 270px;
+  z-index: -1; }
+
+h1.entry-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Novocento";
+  font-size: 48px;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #808080 url(../../images/about-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #808080 url(../../images/about-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: 1240px; }
+
+.entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 13.5rem 1rem 13.5rem;
+  font-family: "Merriweather"; }
+
+.entry-content h2 {
+  text-align: center;
+  font-family: "Novocento";
+  font-size: 34px;
+  text-transform: uppercase; }
+
 #colophon.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,7 +900,7 @@ h1.tent-logo {
   background: url(../../images/dark-wood.png);
   background-size: cover;
   color: #fff;
-  width: auto; }
+  width: 1240px; }
 
 .footer-container {
   display: -webkit-box;
@@ -854,8 +962,10 @@ h1.tent-logo {
       margin: .3rem; }
 
 .business-hours {
-  margin: 2rem 0 1rem 3rem; }
+  margin: 2rem 0 2rem 3rem; }
 
 .copyright {
   -ms-flex-item-align: end;
-      align-self: flex-end; }
+      align-self: flex-end;
+  font-family: "Novocento";
+  margin: 2rem 0 2rem 0; }
