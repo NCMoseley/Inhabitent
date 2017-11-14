@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php endif; ?>
 
             <section class="home-hero">
-            <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
+            <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="full logo">
             </section>
 	<section class="adventures-section">
                            <h2>Latest Adventures</h2>

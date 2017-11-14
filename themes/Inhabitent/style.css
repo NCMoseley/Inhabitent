@@ -607,6 +607,27 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+#secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.wiget.area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.wiget.area div {
+  padding: 2rem; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -780,6 +801,12 @@ h1.tent-logo {
   font-family: "Novocento";
   text-shadow: 1px 1px 2px #323232; }
 
+.main-navigation {
+  position: fixed; }
+
+#site-navigation.main-navigation {
+  position: fixed; }
+
 .adventures-section h2 {
   font-family: "Novocento";
   font-weight: lighter;
@@ -866,7 +893,7 @@ a.morebutton {
   font-weight: lighter;
   text-decoration: none; }
 
-h1.entry-title {
+.site-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

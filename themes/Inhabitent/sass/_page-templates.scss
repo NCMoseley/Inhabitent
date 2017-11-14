@@ -7,10 +7,9 @@
     display: none;
 }
 }
-// Sidebar Wiget==================================================================================
-#secondary{
-    // display: none;
-}
+// Blog Posts==================================================================================
+
+
 
 // Hero Banner==================================================================================
 .home .home-hero {
@@ -69,7 +68,13 @@ h1.tent-logo {
     text-shadow: 1px 1px 2px #323232;
     
 }
-
+.main-navigation {
+    position: fixed;
+}
+#site-navigation.main-navigation {
+    position: fixed;
+    
+}
 // Latest Adventures ==============================================================================
 .adventures-section {
    
@@ -152,8 +157,25 @@ a.morebutton {
 }
 // Begin About  ===================================================================================
 
-h1.entry-title  {
-    display: flex;
+// h1.entry-title  {
+//     display: flex;
+//     align-items: center;
+//     font-family: $font__3;
+//     font-size: 48px;
+//     text-transform: uppercase;
+//     // font-weight: lighter;
+//     flex: 1 1;
+//     color: $color__background-body;
+//     background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/about-hero.jpg) no-repeat top;
+//     background-size: cover,cover;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: auto;
+//     height: 100vh;
+//     // width: $wide__screen-width;
+// }
+.site-main{
+     display: flex;
     align-items: center;
     font-family: $font__3;
     font-size: 48px;
@@ -167,9 +189,8 @@ h1.entry-title  {
     justify-content: center;
     margin: auto;
     height: 100vh;
-    // width: $wide__screen-width;
+//     // width: $wide__screen-width;
 }
-
 // #primary{
 //     display: flex;
 //     justify-content: center;
