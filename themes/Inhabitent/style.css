@@ -893,8 +893,32 @@ a.morebutton {
   font-weight: lighter;
   text-decoration: none; }
 
-.entry-header {
-  height: 100vh; }
+.page-template-about .entry-header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Novocento";
+  font-size: 48px;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  color: #fff;
+  background-size: cover,cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: 100vw; }
 
 .entry-content {
   display: -webkit-box;

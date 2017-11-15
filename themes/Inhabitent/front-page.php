@@ -20,9 +20,9 @@ get_header(); ?>
 			<?php endif; ?>
 
             <section class="home-hero">
-            <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="full logo">
-            </section>
-	<section class="adventures-section">
+              <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="full logo">
+              </section>
+	        <section class="adventures-section">
                            <h2>Latest Adventures</h2>
 		              <!-- <div class="latest-adventures"></div> -->
 
@@ -35,7 +35,7 @@ get_header(); ?>
             <li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3><a class="button" href="">READ MORE</a></li>
 		</div><!-- failure -->
           </ul>
-               <a href="https://www.muchbetteradventures.com/" class="morebutton">More Adventures</a>
+               <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>
 <h4 class="more"></h4>
 		</div> <!-- adventures-container -->
     </section>
