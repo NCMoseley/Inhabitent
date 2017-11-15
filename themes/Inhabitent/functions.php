@@ -96,7 +96,9 @@ add_filter( 'stylesheet_uri', 'Inhabitents_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function Inhabitents_scripts() {
-	wp_enqueue_style( 'Inhabitents-style', get_stylesheet_uri() );
+	// wp_enqueue_style( 'Inhabitents-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
+
 
 	wp_enqueue_script( 'Inhabitents-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 

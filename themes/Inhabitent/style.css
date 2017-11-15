@@ -893,31 +893,7 @@ a.morebutton {
   font-weight: lighter;
   text-decoration: none; }
 
-.site-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Novocento";
-  font-size: 48px;
-  text-transform: uppercase;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #808080 url(../../images/about-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #808080 url(../../images/about-hero.jpg) no-repeat top;
-  background-size: cover,cover;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
+.entry-header {
   height: 100vh; }
 
 .entry-content {
