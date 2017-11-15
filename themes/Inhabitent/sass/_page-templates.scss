@@ -3,9 +3,7 @@
     display: flex;
     margin: auto;
     // width: $wide__screen-width;
-    a {
-    display: none;
-}
+    
 }
 // Blog Posts==================================================================================
 
@@ -37,21 +35,23 @@ p.site-description  {
 
 #site-navigation.main-navigation {
     display: flex;
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
     justify-content: flex-end;
     position: absolute;
-    max-width: 1120px;
+    max-width: 1240px;
 }
 
-.site-header.reverse-header {
-    background-color: transparent;
-    border-bottom: 0;
-    position: absolute;
-    text-shadow: 1px 1px 2px #323232;
-}
+// .site-header.reverse-header {
+//     background-color: transparent;
+//     border-bottom: 0;
+//     position: absolute;
+//     text-shadow: 1px 1px 2px #323232;
+// }
 
 h1.tent-logo {
     position: absolute;
-    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px 33px;
     z-index: 10;
     font-size: 2em;
@@ -61,15 +61,16 @@ h1.tent-logo {
     height: 50px;
 }    
 
-#site-navigation.main-navigation a{
-    color: $color__background-pre;
+.main-navigation a{
+    color: $color__brand-green;
     padding: 1rem;
+    text-transform: uppercase;
     font-family: $font__3;
-    text-shadow: 1px 1px 2px #323232;
-    
+    font-weight: lighter;
+    // text-shadow: 1px 1px 2px #323232;
 }
-.main-navigation {
-    position: fixed;
+.main-navigation a:hover {
+    color: black;
 }
 #site-navigation.main-navigation {
     position: fixed;
@@ -102,26 +103,131 @@ h1.tent-logo {
 }
 
 .canoe {
+    display: flex;
+    flex-direction: column;
     background: url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     height: 540px;
     width: 540px;
-    z-index: -1;
-    // flex: 1;
+    z-index: -10;
+    
+     .text {
+        color: $color__text_light;
+        font-size: 54px;
+        font-family: $font__2;
+        font-weight: lighter;
+        text-decoration: none;
+        z-index: 2;
+    }
+    // .button {
+    // display: flex;
+    // height: 50px;
+    // width: 250px;
+    // border: 1px solid #fff;
+    // background-color: transparent;
+    // margin-left: 6rem;
+    // font-size: 20px;
+    // font-family: $font__3;
+    // justify-content: center;
+    // align-items: center;
+    // text-transform: uppercase;
+    // text-decoration: none;
+    // }
+    // .button:hover {
+    // background-color: #248a83;
+    // border: 1px solid #248a83;
+    // color: #fff;
+    // cursor: pointer;
+    // }
 }
+
+#button {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    color: #fff;
+    font-family: $font__3;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+    #button:hover {
+    background-color: #248a83;
+    border: 1px solid #248a83;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+}
+ 
 
 .beach {
     background: url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
     background-size: cover;
     height: 250px;
     width: 540px;
-    z-index: -1;
-    // flex: 0 0 25%;
+    background-position: center;
+    z-index: -10;
+    
+     a{
+        color: $color__text_light;
+        font-size: $font__size_main;
+        font-family: $font__2;
+        font-weight: lighter;
+        text-decoration: none;
+        z-index: 2;
+    }
+    .button {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: $font__3;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
 }
 .failure{
     display: flex;
     border-top: 20px solid #fff;
+     background-position: center;
+    z-index: -10;
+    
+     a{
+        color: $color__text_light;
+        font-size: $font__size_main;
+        font-family: $font__2;
+        font-weight: lighter;
+        text-decoration: none;
+        z-index: 2;
+    }
+    .button {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: $font__3;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
 }
+
 .view {
     background: url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
     background-size: cover;
@@ -129,7 +235,31 @@ h1.tent-logo {
     width: 270px;
     z-index: -1;
     border-right: 20px solid #fff;
-    // flex: 1;
+    background-position: center;
+    z-index: -10;
+    
+     a{
+        color: $color__text_light;
+        font-size: 1.5rem;
+        font-family: $font__2;
+        font-weight: lighter;
+        text-decoration: none;
+        z-index: 2;
+    }
+    .button {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: $font__3;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
 }
 .sky {
     background: url(../../images/adventure-photos/night-sky.jpg) no-repeat;
@@ -137,7 +267,31 @@ h1.tent-logo {
     height: 270px;
     width: 270px;
     z-index: -1;
-    // flex: 1;
+    background-position: center;
+    z-index: -10;
+    
+     a{
+        color: $color__text_light;
+        font-size: 1.5rem;
+        font-family: $font__2;
+        font-weight: lighter;
+        text-decoration: none;
+        z-index: 2;
+    }
+    .button {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: $font__3;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
 }
 
 a.morebutton {
@@ -146,8 +300,9 @@ a.morebutton {
     width: 250px;
     background-color: #248a83;
     margin-left: 6rem;
-    color: $color__background-body;
+    color: $color__text_light;
     font-size: 20px;
+    font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -196,7 +351,7 @@ a.morebutton {
    text-transform: uppercase;
 
 }
-// Latest Adventures ==============================================================================
+//  ==============================================================================
 
 
 

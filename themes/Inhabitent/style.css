@@ -731,8 +731,6 @@ object {
   display: -ms-flexbox;
   display: flex;
   margin: auto; }
-  .site-content a {
-    display: none; }
 
 .home .home-hero {
   display: -webkit-box;
@@ -772,21 +770,17 @@ p.site-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: absolute;
-  max-width: 1120px; }
-
-.site-header.reverse-header {
-  background-color: transparent;
-  border-bottom: 0;
-  position: absolute;
-  text-shadow: 1px 1px 2px #323232; }
+  max-width: 1240px; }
 
 h1.tent-logo {
   position: absolute;
-  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
   z-index: 10;
   font-size: 2em;
@@ -795,14 +789,15 @@ h1.tent-logo {
   width: 50px;
   height: 50px; }
 
-#site-navigation.main-navigation a {
-  color: #eee;
+.main-navigation a {
+  color: #248A83;
   padding: 1rem;
+  text-transform: uppercase;
   font-family: "Novocento";
-  text-shadow: 1px 1px 2px #323232; }
+  font-weight: lighter; }
 
-.main-navigation {
-  position: fixed; }
+.main-navigation a:hover {
+  color: black; }
 
 #site-navigation.main-navigation {
   position: fixed; }
@@ -839,24 +834,122 @@ h1.tent-logo {
   display: flex; }
 
 .canoe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   height: 540px;
   width: 540px;
-  z-index: -1; }
+  z-index: -10; }
+  .canoe .text {
+    color: #fff;
+    font-size: 54px;
+    font-family: "Merriweather";
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 2; }
+
+#button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 250px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin-left: 6rem;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Novocento";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+#button:hover {
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  color: #fff;
+  cursor: pointer;
+  z-index: 12; }
 
 .beach {
   background: url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
   background-size: cover;
   height: 250px;
   width: 540px;
-  z-index: -1; }
+  background-position: center;
+  z-index: -10; }
+  .beach a {
+    color: #fff;
+    font-size: 39px;
+    font-family: "Merriweather";
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 2; }
+  .beach .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: "Novocento";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .failure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 20px solid #fff; }
+  border-top: 20px solid #fff;
+  background-position: center;
+  z-index: -10; }
+  .failure a {
+    color: #fff;
+    font-size: 39px;
+    font-family: "Merriweather";
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 2; }
+  .failure .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: "Novocento";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .view {
   background: url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
@@ -864,14 +957,70 @@ h1.tent-logo {
   height: 270px;
   width: 270px;
   z-index: -1;
-  border-right: 20px solid #fff; }
+  border-right: 20px solid #fff;
+  background-position: center;
+  z-index: -10; }
+  .view a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 2; }
+  .view .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: "Novocento";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .sky {
   background: url(../../images/adventure-photos/night-sky.jpg) no-repeat;
   background-size: cover;
   height: 270px;
   width: 270px;
-  z-index: -1; }
+  z-index: -1;
+  background-position: center;
+  z-index: -10; }
+  .sky a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Merriweather";
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 2; }
+  .sky .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-left: 6rem;
+    font-size: 20px;
+    font-family: "Novocento";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    text-decoration: none; }
 
 a.morebutton {
   display: -webkit-box;
@@ -883,6 +1032,7 @@ a.morebutton {
   margin-left: 6rem;
   color: #fff;
   font-size: 20px;
+  font-family: "Novocento";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

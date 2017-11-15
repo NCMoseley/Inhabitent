@@ -25,10 +25,9 @@ get_header(); ?>
 	        <section class="adventures-section">
                            <h2>Latest Adventures</h2>
 		              <!-- <div class="latest-adventures"></div> -->
-
         <div class="adventures-container">
           <ul class="adventure-list">
-            <li class="canoe"><h3><a href="">Getting Back to Nature in a Canoe</a></h3><a     class="button" href="">READ MORE</a></li>
+            <li class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3></li><a id="button" href="https://github.com/NCMoseley?tab=repositories">READ MORE</a>
             <li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3><a class="button" href="">READ MORE</a></li>
 		 <div class="failure">
             <li class="view"><h3><a href="">Taking in the View at Big Mountain</a></h3><a class="button" href="">READ MORE</a></li>
