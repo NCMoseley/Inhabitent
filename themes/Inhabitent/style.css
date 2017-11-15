@@ -1090,6 +1090,10 @@ a.morebutton {
   font-size: 34px;
   text-transform: uppercase; }
 
+.journal {
+  height: 50vh;
+  width: 100vw; }
+
 #colophon.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -22,6 +22,24 @@ get_header(); ?>
             <section class="home-hero">
               <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="full logo">
               </section>
+
+
+            
+            <?php
+               $args = array( 'post_type' => 'post', 'order' => 'ASC' );
+
+               $product_posts = get_posts( $args ); // returns an array of posts
+              ?>
+
+			<section class="journal">
+            <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+            <?php the_post_thumbnail(); ?>
+			<?php the_posts_navigation(); ?>
+			<?php the_posts_content(); ?>
+              <?php endforeach; wp_reset_postdata(); ?>
+            </section>
+
+
 	        <section class="adventures-section">
                            <h2>Latest Adventures</h2>
 		              <!-- <div class="latest-adventures"></div> -->
@@ -35,7 +53,7 @@ get_header(); ?>
 		</div><!-- failure -->
           </ul>
                <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>
-<h4 class="more"></h4>
+               <h4 class="more"></h4>
 		</div> <!-- adventures-container -->
     </section>
 
@@ -54,7 +72,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
           
 		<?php endif; ?>
-
+        
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
