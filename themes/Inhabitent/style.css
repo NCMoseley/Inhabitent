@@ -863,7 +863,6 @@ h1.tent-logo {
   width: 250px;
   border: 1px solid #fff;
   background-color: transparent;
-  margin-left: 6rem;
   font-size: 20px;
   color: #fff;
   font-family: "Novocento";
@@ -1090,9 +1089,103 @@ a.morebutton {
   font-size: 34px;
   text-transform: uppercase; }
 
+.product-info-container {
+  height: 100vh;
+  width: auto; }
+
+.habj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .journal {
-  height: 50vh;
-  width: 100vw; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 120vh;
+  width: 100vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem 0 2rem 0; }
+
+.thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 30vw;
+  border: 1px solid #ccc;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #248A83; }
+  .thumbs img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60vh;
+    width: 40vw; }
+  .thumbs a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #000; }
+  .thumbs p {
+    font-family: Merriweather;
+    text-align: left;
+    height: 15px;
+    margin: 1rem 0 0 0;
+    color: #808080;
+    font-size: 12px;
+    -ms-flex-item-align: left;
+        align-self: left; }
+
+#jbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 250px;
+  border: 1px solid #000;
+  margin: 1rem;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #000;
+  font-family: "Novocento";
+  -ms-flex-item-align: auto;
+      align-self: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+#jbutton:hover {
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  color: #fff;
+  cursor: pointer;
+  z-index: 12; }
 
 #colophon.site-footer {
   display: -webkit-box;

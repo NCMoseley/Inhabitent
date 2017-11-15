@@ -148,7 +148,7 @@ h1.tent-logo {
     width: 250px;
     border: 1px solid #fff;
     background-color: transparent;
-    margin-left: 6rem;
+    // margin-left: 6rem;
     font-size: 20px;
     color: #fff;
     font-family: $font__3;
@@ -351,15 +351,87 @@ a.morebutton {
    text-transform: uppercase;
 
 }
-//  Journal ==============================================================================
 
-.journal {
-    height: 50vh;
-    width: 100vw;
+//  Shop Stuff ==============================================================================
+.product-info-container{
+    height: 100vh;
+    width: auto;
+
 }
 
+//  Journal ==============================================================================
 
-
+.habj {
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+}
+.journal {
+    display: flex;
+    flex-direction: row;
+    height: 120vh;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+}
+.thumbs {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 30vw;
+    border: 1px solid $color__background-hr;
+    justify-content: flex-start;
+    align-items: left;
+    // text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color__brand-green;
+    img{
+    display: flex;
+    height: 60vh;
+    width: 40vw;
+}
+    a{
+        text-decoration: none;
+        color: black;
+        border: 1px solid $color__black;
+    }
+    p {
+        font-family: Merriweather;
+        text-align: left;
+        height: 15px;
+        margin: 1rem 0 0 0;
+        color: $color__brand-grey;
+        font-size: 12px;
+        align-self: left;
+    }
+}
+#jbutton {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid $color__black;
+    margin: 1rem;
+    background-color: transparent;
+    // margin-left: 6rem;
+    font-size: 20px;
+    font-weight: lighter;
+    color: $color__black;
+    font-family: $font__3;
+    align-self: auto;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+    #jbutton:hover {
+    background-color: #248a83;
+    border: 1px solid #248a83;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+}
 
 
 
