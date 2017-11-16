@@ -1146,18 +1146,23 @@ a.morebutton {
     height: 70px;
     width: 70px; }
 
+.product-type-block-wrapper:hover {
+  border: 1px solid #d99054;
+  cursor: pointer;
+  z-index: 12; }
+
 a.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 40px;
   width: 140px;
-  border: 1px solid #000;
+  background-color: #248a83;
+  border: 1px solid #248a83;
   margin: 1rem;
-  background-color: transparent;
   font-size: 1rem;
   font-weight: lighter;
-  color: #000;
+  color: #fff;
   font-family: "Novocento";
   -ms-flex-item-align: auto;
       align-self: auto;
@@ -1169,6 +1174,12 @@ a.btn {
           align-items: center;
   text-transform: uppercase;
   text-decoration: none; }
+
+a.btn:hover {
+  background-color: #175751;
+  color: #808080;
+  cursor: pointer;
+  z-index: 12; }
 
 .sdesc {
   display: -webkit-box;

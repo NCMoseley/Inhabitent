@@ -394,6 +394,11 @@ a.morebutton {
         width: 70px;
     }
 }
+.product-type-block-wrapper:hover {
+    border: 1px solid $color__text-orange;
+    cursor: pointer;
+    z-index: 12;
+}
 // .swrapper{
 //     display: flex;
 //     justify-content: center;
@@ -410,12 +415,12 @@ a.btn {
     display: flex;
     height: 40px;
     width: 140px;
-    border: 1px solid $color__black;
+    background-color: #248a83;
+    border: 1px solid #248a83;
     margin: 1rem;
-    background-color: transparent;
     font-size: 1rem;
     font-weight: lighter;
-    color: $color__black;
+    color: $color__background-body;
     font-family: $font__3;
     align-self: auto;
     justify-content: center;
@@ -423,6 +428,12 @@ a.btn {
     text-transform: uppercase;
     text-decoration: none;
 
+}
+a.btn:hover {
+    background-color: #175751;
+    color: $color__brand-grey;
+    cursor: pointer;
+    z-index: 12;
 }
 .sdesc{
     display: flex;
