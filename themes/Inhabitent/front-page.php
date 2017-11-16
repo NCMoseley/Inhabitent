@@ -24,15 +24,16 @@ get_header(); ?>
               </section>
 
 <!-- Shop Stuff -->
+
+                       <h1 class="shopstuff">Shop Stuff</h1>
             <section class="product-info-container">
-            <h2>Shop Stuff</h2>
+            
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product-type',
                    'hide_empty' => 0,
                ) );
 
-			   d($terms);
                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
             ?>
                <div class="product-type-blocks">
@@ -40,9 +41,11 @@ get_header(); ?>
                   <?php foreach ( $terms as $term ) : ?>
 
                      <div class="product-type-block-wrapper">
-                        <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-                        <p><?php echo $term->description; ?></p>
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+					  <!-- <div class="swrapper">	  -->
+                        <img class="spic" src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                        <div class"sdesc"><?php echo $term->description; ?></div>
+                        <div><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></div>
+					  <!-- </div>	 -->
                      </div>
 
                   <?php endforeach; ?>
@@ -60,22 +63,22 @@ get_header(); ?>
               ?>
 			  
              <h1 class="habj">Inhabitant Journal</h1>
-
+        <div class="journal-container">
 			<section class="journal">
             <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 			
 			<div class="thumbs">
             <?php the_post_thumbnail(); ?>
-			<p class="jdate"><?php the_date(); ?></p>
-			<?php the_title(); ?>
-			
+			<p class="jdate"><?php the_date(); ?><?php the_date(); ?> / <?php echo get_comments_number();?> <?php echo 'comments';?></p>
+			<div class="jtitle"><?php the_title(); ?></div>
+		
             <a id="jbutton" href="<?php the_permalink(); ?>">Read Entry</a>
 			<?php the_posts_navigation(); ?>
 			</div>
 
               <?php endforeach; wp_reset_postdata(); ?>
             </section>
-
+        </div>
 <!-- Latest Adventures -->
 	        <section class="adventures-section">
                            <h2>Latest Adventures</h2>

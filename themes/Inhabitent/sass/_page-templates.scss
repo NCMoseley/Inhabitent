@@ -335,6 +335,7 @@ a.morebutton {
 //     display: flex;
 //     justify-content: center;
 // }
+
 .entry-content {
     display: flex;
     justify-content: center;
@@ -353,68 +354,153 @@ a.morebutton {
 }
 
 //  Shop Stuff ==============================================================================
-.product-info-container{
-    height: 100vh;
-    width: auto;
-
+.shopstuff {
+    display: flex;
+    height: 5rem;
+    font-family: $font__3;
+    justify-content: center;
+    font-weight: lighter;
+    text-transform: uppercase;
 }
 
+.product-info-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.product-type-blocks{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 90vw;
+    justify-content: space-around;
+    
+}
+
+.product-type-block-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 80vh;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    max-width: 23.5%;
+    padding: .75rem;
+    img {
+        height: 70px;
+        width: 70px;
+    }
+}
+// .swrapper{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     width: 20vw;
+//     height: 60vh;
+//     border: 1px solid #e1e1e1;
+//     border-top-width: 5px;
+//     // flex: 0 1 23.5%;
+//     max-width: 23.5%;
+//     padding: .75rem;
+// }
+a.btn {
+    display: flex;
+    height: 40px;
+    width: 140px;
+    border: 1px solid $color__black;
+    margin: 1rem;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: $color__black;
+    font-family: $font__3;
+    align-self: auto;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.sdesc{
+    display: flex;
+    height: 1vh;
+    width: 1vw;
+
+}
 //  Journal ==============================================================================
 
 .habj {
     display: flex;
     height: 5rem;
+    font-family: $font__3;
+    justify-content: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.journal-container {
+    display: flex;
     justify-content: center;
 }
 .journal {
     display: flex;
     flex-direction: row;
-    height: 120vh;
-    width: 100vw;
+    height: 500px;
+    width: 85vw;
     justify-content: space-around;
-    padding: 2rem 0 2rem 0;
+    justify-self: center;
+    // padding: 2rem 0 2rem 0;
 }
 .thumbs {
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 30vw;
+    height: 430px;
+    width: 27vw;
     border: 1px solid $color__background-hr;
     justify-content: flex-start;
     align-items: left;
-    // text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: $color__brand-green;
     img{
     display: flex;
     height: 60vh;
     width: 40vw;
+    border-bottom: 3px solid $color__background-hr;
 }
     a{
         text-decoration: none;
         color: black;
         border: 1px solid $color__black;
+        padding: 0 1rem 0 1rem;
     }
     p {
-        font-family: Merriweather;
+        font-family: $font__2;
         text-align: left;
         height: 15px;
         margin: 1rem 0 0 0;
         color: $color__brand-grey;
+        font-weight: lighter;
         font-size: 12px;
         align-self: left;
+        padding-left: 1rem;
     }
+}
+div.jtitle{
+   font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color__brand-green;
+    padding-left: 1rem;
 }
 #jbutton {
     display: flex;
-    height: 50px;
-    width: 250px;
+    height: 40px;
+    width: 140px;
     border: 1px solid $color__black;
     margin: 1rem;
     background-color: transparent;
-    // margin-left: 6rem;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: lighter;
     color: $color__black;
     font-family: $font__3;
