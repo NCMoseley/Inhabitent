@@ -135,8 +135,8 @@ h1.tent-logo {
     // text-decoration: none;
     // }
     // .button:hover {
-    // background-color: #248a83;
-    // border: 1px solid #248a83;
+    // background-color: $color__green;
+    // border: 1px solid $color__green;
     // color: #fff;
     // cursor: pointer;
     // }
@@ -159,8 +159,8 @@ h1.tent-logo {
     
 }
     #button:hover {
-    background-color: #248a83;
-    border: 1px solid #248a83;
+    background-color: $color__green;
+    border: 1px solid $color__green;
     color: #fff;
     cursor: pointer;
     z-index: 12;
@@ -298,7 +298,7 @@ a.morebutton {
     display: flex;
     height: 50px;
     width: 250px;
-    background-color: #248a83;
+    background-color: $color__green;
     margin-left: 6rem;
     color: $color__text_light;
     font-size: 20px;
@@ -319,10 +319,8 @@ a.morebutton {
     font-family: $font__3;
     font-size: 48px;
     text-transform: uppercase;
-    // font-weight: lighter;
     flex: 1 1;
     color: $color__background-body;
-    // background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/about-hero.jpg) no-repeat top;
     background-size: cover,cover;
     flex-direction: column;
     justify-content: center;
@@ -331,10 +329,6 @@ a.morebutton {
     width: 100vw;
 }
 
-// #primary{
-//     display: flex;
-//     justify-content: center;
-// }
 
 .entry-content {
     display: flex;
@@ -356,11 +350,13 @@ a.morebutton {
 //  Shop Stuff ==============================================================================
 .shopstuff {
     display: flex;
-    height: 5rem;
+    height: 8rem;
+    font-size: 38px;
     font-family: $font__3;
     justify-content: center;
     font-weight: lighter;
     text-transform: uppercase;
+    padding: 2rem 0 2rem 0;
 }
 
 .product-info-container {
@@ -372,7 +368,7 @@ a.morebutton {
 .product-type-blocks{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 60vh;
     width: 90vw;
     justify-content: space-around;
     
@@ -380,11 +376,11 @@ a.morebutton {
 
 .product-type-block-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 20vw;
-    height: 80vh;
+    height: 50vh;
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
     max-width: 23.5%;
@@ -396,27 +392,14 @@ a.morebutton {
 }
 .product-type-block-wrapper:hover {
     border: 1px solid $color__text-orange;
-    cursor: pointer;
-    z-index: 12;
 }
-// .swrapper{
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     width: 20vw;
-//     height: 60vh;
-//     border: 1px solid #e1e1e1;
-//     border-top-width: 5px;
-//     // flex: 0 1 23.5%;
-//     max-width: 23.5%;
-//     padding: .75rem;
-// }
+
 a.btn {
     display: flex;
     height: 40px;
     width: 140px;
-    background-color: #248a83;
-    border: 1px solid #248a83;
+    background-color: $color__green;
+    border: 1px solid $color__green;
     margin: 1rem;
     font-size: 1rem;
     font-weight: lighter;
@@ -431,7 +414,7 @@ a.btn {
 }
 a.btn:hover {
     background-color: #175751;
-    color: $color__brand-grey;
+    color: $color__background-body;
     cursor: pointer;
     z-index: 12;
 }
@@ -441,7 +424,7 @@ a.btn:hover {
     width: 1vw;
 
 }
-//  Journal ==============================================================================
+//  Journal front Page ==============================================================================
 
 .habj {
     display: flex;
@@ -523,12 +506,124 @@ div.jtitle{
     
 }
     #jbutton:hover {
-    background-color: #248a83;
-    border: 1px solid #248a83;
+    background-color: $color__green;
+    border: 1px solid $color__green;
     color: #fff;
     cursor: pointer;
     z-index: 12;
 }
+// Journal Page ==================================================================================
+.blog{
+    .entry-header {   
+    display: flex;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+    img {
+        width: 60vw;
+    }
+    h2{
+    display: flex;
+    align-self: left;
+    background-color: $color__green;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    padding: .25rem 1.5rem .25rem 1.5rem;
+    position: absolute;
+    margin: 2.25rem 0 0 4rem;
+    max-width: 40%;
+    a{
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    }
+}
+.entry-meta { 
+    display: flex;
+    width: 40vw;
+    background-color: $color__green;
+    color: #fff;
+    padding: .25rem 1.5rem;
+    margin: 2.25rem 0 0 16rem;
+}
+.entry-content {
+    flex-direction: column;
+    padding: 0;
+    font-family: $font__2;
+}
+
+
+}
+// Begin Sidebar ==================================================================================
+#secondary {
+    width: 130vw;
+}
+.widget-area {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    width: 800px;
+    padding: 3rem 0 0 0;
+    border-left: 1px solid #e1e1e1;
+}
+.widget {
+    margin: 0 0 1.5rem;
+    padding: 3rem 0 0 3rem;
+}
+.widget_text {
+    // display: flex;
+    
+}
+.widget-title {
+    font-family: $font__3;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+.textwidget {
+    font-family: $font__2;
+}
+.textwidget i {
+    padding: 0 1rem 0 1rem;
+}   
+.textwidget a {
+    color: $color__green;
+    font-family: $font__2;
+    text-decoration: none;
+    
+}
+.textwidget a:hover {
+    color: $color__black;
+}
+.tent-biz-hours-class p {
+    font-family: $font__2;
+    
+}
+.dayweek {
+    font-weight: bolder;
+}
+.widget_archive ul {
+    list-style: none;
+    font-family: $font__2;
+    padding: 0;
+    a{color: $color__green;
+      text-decoration: none;
+       
+    }
+}
+// Find Us ===================================================================================
+
+// #post-16{
+//     padding-top: 5rem;
+//     h1{
+//         text-transform: uppercase;
+//         padding-left: 12rem;
+//     }
+// }
 
 
 
