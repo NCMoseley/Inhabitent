@@ -647,8 +647,7 @@ div.jbtn{
 }
 
 
-
-// Begin Sidebar ==================================================================================
+//  Begin Sidebar =================================================================================
 #secondary {
     width: 130vw;
 }
@@ -705,6 +704,68 @@ div.jbtn{
        
     }
 }
+
+// Archive ===================================================================================
+
+.post-type-archive-product {
+    
+  .site-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 5rem;
+  }
+  article {
+    display: flex;
+    width: 18rem;
+    height: 19rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+      .entry-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+      }
+      
+      img {
+        flex: 4;
+        border-bottom: 4px solid black;
+      }
+      .entry-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      
+      a {
+        color: black;
+      }
+      .entry-title {
+        font-family: $font__2;
+        font-size: 1rem;
+        font-weight: normal;  
+      }
+    }
+  }
+}
+
+.price-meta::before {
+   content: '.......';
+}
+
+
+
+
+
 // Find Us ===================================================================================
 
 .post-16 {

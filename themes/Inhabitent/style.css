@@ -1480,6 +1480,79 @@ div.jtitle {
     color: #248a83;
     text-decoration: none; }
 
+.post-type-archive-product .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.post-type-archive-product .page-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px dashed grey;
+  margin-bottom: 5rem; }
+
+.post-type-archive-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18rem;
+  height: 19rem;
+  margin: 0.5rem;
+  border: 1px solid black; }
+  .post-type-archive-product article .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto; }
+  .post-type-archive-product article img {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    border-bottom: 4px solid black; }
+  .post-type-archive-product article .entry-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .post-type-archive-product article .entry-container a {
+      color: black; }
+    .post-type-archive-product article .entry-container .entry-title {
+      font-family: "Merriweather";
+      font-size: 1rem;
+      font-weight: normal; }
+
+.price-meta::before {
+  content: '.......'; }
+
 .post-16 {
   width: 64vw;
   margin: 5rem 0 0 5rem; }
