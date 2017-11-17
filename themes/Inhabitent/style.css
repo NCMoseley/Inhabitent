@@ -1480,6 +1480,10 @@ div.jtitle {
     color: #248a83;
     text-decoration: none; }
 
+.post-16 {
+  width: 64vw;
+  margin: 5rem 0 0 5rem; }
+
 #colophon.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
