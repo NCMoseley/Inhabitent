@@ -19,8 +19,12 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			
 				<?php get_template_part( 'template-parts/content' ); ?>
+            <div class="jbtn">
+                <a id="jbutton" href="<?php the_permalink(); ?>">Read Entry</a>
+			<?php the_posts_navigation(); ?>
+			</div>
 
 			<?php endwhile; ?>
 
