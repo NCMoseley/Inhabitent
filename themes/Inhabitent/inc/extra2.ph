@@ -35,3 +35,5 @@ function the_url( $url ) {
 }
 add_filter( 'login_headerurl', 'the_url' );
 
+<a href="esc_url( get_permalink() ) )" rel=""><?php the_post_thumbnail( 'large' ); ?></a>
+		<?php endif; ?>

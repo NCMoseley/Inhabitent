@@ -1499,17 +1499,22 @@ div.jtitle {
   display: block;
   width: 100%;
   text-align: center;
-  border-bottom: 1px dashed grey;
-  margin-bottom: 5rem; }
+  border-bottom: 1px dashed #808080;
+  margin-bottom: 5rem;
+  padding-top: 5rem; }
 
 .post-type-archive-product article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 18rem;
   height: 19rem;
   margin: 0.5rem;
-  border: 1px solid black; }
+  border: 1px solid #eee; }
   .post-type-archive-product article .entry-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1529,7 +1534,10 @@ div.jtitle {
     -webkit-box-flex: 4;
         -ms-flex: 4;
             flex: 4;
-    border-bottom: 4px solid black; }
+    border-bottom: 4px solid #808080;
+    height: 200px; }
+    .post-type-archive-product article img :hover {
+      border-bottom: 0; }
   .post-type-archive-product article .entry-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1544,14 +1552,26 @@ div.jtitle {
         -ms-flex: 1;
             flex: 1; }
     .post-type-archive-product article .entry-container a {
-      color: black; }
+      color: black;
+      text-decoration: none; }
     .post-type-archive-product article .entry-container .entry-title {
       font-family: "Merriweather";
       font-size: 1rem;
       font-weight: normal; }
+  .post-type-archive-product article .entry-content {
+    display: none; }
+
+.price-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: "Merriweather"; }
 
 .price-meta::before {
-  content: '.......'; }
+  content: ".....$"; }
 
 .post-16 {
   width: 64vw;

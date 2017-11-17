@@ -719,15 +719,17 @@ div.jbtn{
     display: block;
     width: 100%;
     text-align: center;
-    border-bottom: 1px dashed grey;
+    border-bottom: 1px dashed $color__brand-grey;
     margin-bottom: 5rem;
+    padding-top: 5rem;
   }
   article {
     display: flex;
+    flex-direction: column;
     width: 18rem;
     height: 19rem;
     margin: 0.5rem;
-    border: 1px solid black;
+    border: 1px solid $color__background-pre;
       .entry-header {
         display: flex;
         flex-direction: column;
@@ -738,7 +740,11 @@ div.jbtn{
       
       img {
         flex: 4;
-        border-bottom: 4px solid black;
+        border-bottom: 4px solid $color__brand-grey;
+        height: 200px;
+        :hover {
+        border-bottom: 0;    
+        }
       }
       .entry-container {
         display: flex;
@@ -748,21 +754,29 @@ div.jbtn{
       
       a {
         color: black;
+        text-decoration: none; 
       }
       .entry-title {
         font-family: $font__2;
         font-size: 1rem;
-        font-weight: normal;  
+        font-weight: normal; 
+        
       }
+    } .entry-content {
+        display: none;
     }
   }
 }
 
-.price-meta::before {
-   content: '.......';
+.price-meta {
+    display: flex;
+    align-items: baseline;
+    font-family: $font__2;
+    
 }
-
-
+.price-meta::before {
+   content: ".....$";
+}
 
 
 
