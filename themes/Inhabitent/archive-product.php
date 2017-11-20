@@ -42,6 +42,7 @@ get_header(); ?>
               $meta_print_value=get_post_meta(get_the_ID(),"price",true);
               echo($meta_print_value);
               ?></span>
+			  
      </div> <!-- .entry-container -->
 		<?php if ( 'post' === get_post_type() ) : ?>
 		

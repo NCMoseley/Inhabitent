@@ -564,6 +564,7 @@ div.jbtn{
 
 }
 // Single ==================================================================================
+
 .post-template-default {
 
      
@@ -626,9 +627,6 @@ div.jbtn{
 }
 }
 
-
-// Single ==================================================================================
-
 .comments-area {
     padding: 0 5rem 0 5rem;
     font-family: $font__2;
@@ -646,8 +644,96 @@ div.jbtn{
     }
 }
 
+//  Single Shop Item =================================================================================
 
+.whole {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 6rem 0;
+}
+.single {
+    
+    img {
+        padding: 5rem 0 0 5rem;
+    }
+    .wrap {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 3rem 0 0 2rem;
+    h1 {
+       text-transform: uppercase;
+       color: $color__text-orange;
+       font-size: 38px;
+    }
+    p{
+        width: 40vw;
+        padding: 0 0 0 1rem;
+    }
+    
+    .price-meta {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    button {
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    color: #000;
+    cursor: pointer;
+    font-family: $font__3;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+    button:hover {
+    background-color: $color__green;
+    border: 1px solid $color__green;
+    color: #fff;
+    cursor: pointer;
+    }
+}
+}
+
+//  Search ==========================================================================
+
+fieldset{
+    border: 0;
+    margin: 0;
+    padding: .7rem 1rem .4rem;
+
+    .search-submit{
+    display: inline;
+    color: $color__green;
+    font-size: 16px;
+    line-height: 1;
+    // padding: .6rem 1rem .4rem;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.8);
+    }
+
+label {    
+    .search-field {
+        width: 0px;
+        transition: .5s;
+    }
+
+    &.expanded {
+        input {
+            width: 175px;
+        }
+    }
+}  
+
+input.search-field {
+    border: none;
+    background: transparent;
+}
+}
 //  Begin Sidebar =================================================================================
+
 #secondary {
     width: 130vw;
 }
@@ -717,7 +803,7 @@ div.jbtn{
   }
   .page-header {
     display: block;
-    width: 100%;
+    width: 90%;
     text-align: center;
     border-bottom: 1px dashed $color__brand-grey;
     margin-bottom: 5rem;
@@ -727,7 +813,7 @@ div.jbtn{
     display: flex;
     flex-direction: column;
     width: 18rem;
-    height: 19rem;
+    height: 18rem;
     margin: 0.5rem;
     border: 1px solid $color__background-pre;
       .entry-header {

@@ -10,11 +10,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+         
 		<?php while ( have_posts() ) : the_post(); ?>
+          
+        <div class="entry-container"> 
+            <div class="single-wrap">
+			   <?php get_template_part( 'template-parts/content', 'product' ); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-			
-             
+
+
+            </div> <!-- .single-wrap -->
+        </div> <!-- .entry-container -->
 			<?php the_post_navigation(); ?>
 
 			
