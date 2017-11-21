@@ -742,7 +742,7 @@ object {
           flex: 1 1;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #808080 url(../../images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #808080 url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover,cover;
+  background-size: cover, cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -768,14 +768,37 @@ p.site-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: absolute; }
 
 h1.tent-logo {
+  position: absolute;
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px;
+  z-index: 10;
+  font-size: 2em;
+  left: 10px;
+  top: -15px;
+  width: 50px;
+  height: 50px; }
+
+.main-navigation a {
+  color: #fff;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: "Novocento";
+  font-weight: lighter;
+  text-shadow: 0 1px 0 rgba(77, 77, 77, 0.8); }
+
+.main-navigation a:hover {
+  color: #fff9c0; }
+
+#site-navigation.main-navigation {
+  position: fixed; }
+
+#site-navigation.fade-in h1.tent-logo {
   position: absolute;
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -786,18 +809,18 @@ h1.tent-logo {
   width: 50px;
   height: 50px; }
 
-.main-navigation a {
-  color: #248A83;
+#site-navigation.fade-in ul li a {
+  color: #248a83;
   padding: 1rem;
   text-transform: uppercase;
   font-family: "Novocento";
   font-weight: lighter; }
 
-.main-navigation a:hover {
-  color: black; }
-
-#site-navigation.main-navigation {
-  position: fixed; }
+.main-navigation.fade-in {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1; }
+  .main-navigation.fade-in a:hover {
+    color: #fff9c0; }
 
 .adventures-section h2 {
   font-family: "Novocento";
@@ -911,7 +934,7 @@ h1.tent-logo {
   display: flex;
   height: 50px;
   width: 150px;
-  border: 1px solid #fff;
+  border: 1px solid #e1e1e1;
   background-color: transparent;
   font-size: 20px;
   color: #fff;
@@ -1088,7 +1111,7 @@ a.morebutton:hover {
       -ms-flex: 1 1;
           flex: 1 1;
   color: #fff;
-  background-size: cover,cover;
+  background-size: cover, cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1527,6 +1550,29 @@ fieldset {
     border: none;
     background: transparent; }
 
+.search-results .site-main {
+  width: 70vw;
+  height: 70vh;
+  padding: 5rem 0 0 0; }
+  .search-results .site-main h1 {
+    text-align: center; }
+  .search-results .site-main a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 0 0 2.5rem; }
+  .search-results .site-main p {
+    width: 40vw;
+    padding: 0 0 0 5rem; }
+
+.search-no-results .page-content {
+  width: 70vw;
+  height: 70vh;
+  padding: 10rem 0 0 0; }
+
+.search-no-results fieldset label .search-field {
+  width: 475px;
+  background: #ccc; }
+
 #secondary {
   width: 130vw; }
 
@@ -1580,7 +1626,8 @@ fieldset {
     color: #248a83;
     text-decoration: none; }
 
-.post-type-archive-product .site-main, .tax-product-type .site-main {
+.post-type-archive-product .site-main,
+.tax-product-type .site-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1595,7 +1642,8 @@ fieldset {
       -ms-flex-align: center;
           align-items: center; }
 
-.post-type-archive-product .page-header, .tax-product-type .page-header {
+.post-type-archive-product .page-header,
+.tax-product-type .page-header {
   display: block;
   width: 90%;
   text-align: center;
@@ -1603,7 +1651,8 @@ fieldset {
   margin-bottom: 5rem;
   padding-top: 5rem; }
 
-.post-type-archive-product article, .tax-product-type article {
+.post-type-archive-product article,
+.tax-product-type article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1615,7 +1664,8 @@ fieldset {
   height: 18rem;
   margin: 0.5rem;
   border: 1px solid #eee; }
-  .post-type-archive-product article .entry-header, .tax-product-type article .entry-header {
+  .post-type-archive-product article .entry-header,
+  .tax-product-type article .entry-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1630,15 +1680,18 @@ fieldset {
         -ms-flex-align: center;
             align-items: center;
     height: auto; }
-  .post-type-archive-product article img, .tax-product-type article img {
+  .post-type-archive-product article img,
+  .tax-product-type article img {
     -webkit-box-flex: 4;
         -ms-flex: 4;
             flex: 4;
     border-bottom: 4px solid #808080;
     height: 200px; }
-    .post-type-archive-product article img :hover, .tax-product-type article img :hover {
+    .post-type-archive-product article img :hover,
+    .tax-product-type article img :hover {
       border-bottom: 0; }
-  .post-type-archive-product article .entry-container, .tax-product-type article .entry-container {
+  .post-type-archive-product article .entry-container,
+  .tax-product-type article .entry-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1651,14 +1704,17 @@ fieldset {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    .post-type-archive-product article .entry-container a, .tax-product-type article .entry-container a {
+    .post-type-archive-product article .entry-container a,
+    .tax-product-type article .entry-container a {
       color: black;
       text-decoration: none; }
-    .post-type-archive-product article .entry-container .entry-title, .tax-product-type article .entry-container .entry-title {
+    .post-type-archive-product article .entry-container .entry-title,
+    .tax-product-type article .entry-container .entry-title {
       font-family: "Merriweather";
       font-size: 1rem;
       font-weight: normal; }
-  .post-type-archive-product article .entry-content, .tax-product-type article .entry-content {
+  .post-type-archive-product article .entry-content,
+  .tax-product-type article .entry-content {
     display: none; }
 
 .price-meta {

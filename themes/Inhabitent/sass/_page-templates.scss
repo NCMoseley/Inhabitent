@@ -1,7 +1,7 @@
 // Special ==================================================================================
 .site-content {
     display: flex;
-    margin: auto;   
+    margin: auto;
     margin-bottom: 5rem;
 }
 
@@ -9,49 +9,37 @@
     display: none;
 }
 
-
 // Hero Banner==================================================================================
 .home .home-hero {
     display: flex;
     align-items: center;
     flex: 1 1;
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#808080 url(../../images/home-hero.jpg) no-repeat top;
-    background-size: cover,cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), #808080 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover, cover;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     height: 100vh;
-    // width: $wide__screen-width;
-    // width: max-content;
 }
 
-p.site-description  {
+p.site-description {
     display: none;
 }
+
 .site-header .container {
     display: flex;
-    // align-items: center;
     justify-content: center;
 }
 
 #site-navigation.main-navigation {
     display: flex;
-    background-color: hsla(0,0%,100%,.85);
-    border-bottom: 1px solid #e1e1e1;
     justify-content: flex-end;
     position: absolute;
 }
 
-// .site-header.reverse-header {
-//     background-color: transparent;
-//     border-bottom: 0;
-//     position: absolute;
-//     text-shadow: 1px 1px 2px #323232;
-// }
-
 h1.tent-logo {
     position: absolute;
-    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
     background-size: 50px 33px;
     z-index: 10;
     font-size: 2em;
@@ -59,28 +47,57 @@ h1.tent-logo {
     top: -15px;
     width: 50px;
     height: 50px;
-}    
+}
 
-.main-navigation a{
-    color: $color__brand-green;
+.main-navigation a {
+    color: $color__text_light;
     padding: 1rem;
     text-transform: uppercase;
     font-family: $font__3;
     font-weight: lighter;
-    // text-shadow: 1px 1px 2px #323232;
+    text-shadow: 0 1px 0 hsla(0, 0%, 30%, .8);
 }
+
 .main-navigation a:hover {
-    color: black;
+    color: $color__background-ins;
 }
+
 #site-navigation.main-navigation {
     position: fixed;
-    
 }
-// Latest Adventures ==============================================================================
 
+#site-navigation.fade-in {
+    h1.tent-logo {
+        position: absolute;
+        background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+        background-size: 50px 33px;
+        z-index: 10;
+        font-size: 2em;
+        left: 10px;
+        top: -15px;
+        width: 50px;
+        height: 50px;
+    }
+    ul li a {
+        color: $color__green;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-family: $font__3;
+        font-weight: lighter;
+    }
+}
+
+.main-navigation.fade-in {
+    background-color: hsla(0, 0%, 100%, .85);
+    border-bottom: 1px solid #e1e1e1;
+    a:hover {
+        color: $color__background-ins;
+    }
+}
+
+// Latest Adventures ==============================================================================
 .adventures-section {
-   
-    h2{
+    h2 {
         font-family: $font__3;
         font-weight: lighter;
         text-align: center;
@@ -88,7 +105,7 @@ h1.tent-logo {
     }
 }
 
-.adventures-container ul{
+.adventures-container ul {
     display: flex;
     box-sizing: border-box;
     list-style-type: none;
@@ -98,32 +115,29 @@ h1.tent-logo {
     width: $wide__screen-width;
     height: 40rem;
     padding-right: 5rem;
-    h3{
+    h3 {
         padding: 1rem;
     }
 }
+
 .adventure-list {
     display: flex;
 }
 
 .strap {
-    display:flex;
+    display: flex;
     padding: 1rem 1rem 0 0;
-    
 }
-
 
 .canoe {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/canoe-girl.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/canoe-girl.jpg) no-repeat top;
     background-size: cover;
     background-position: center;
     height: 540px;
     width: 540px;
-   
-    
-     .text {
+    .text {
         color: $color__text_light;
         font-size: 54px;
         font-family: $font__2;
@@ -132,14 +146,15 @@ h1.tent-logo {
         z-index: 2;
     }
 }
-    #abutton {
+
+#abutton {
     display: flex;
     height: 50px;
     width: 150px;
     border: 1px solid #fff;
     background-color: transparent;
     font-size: 20px;
-    color: #fff;
+    color: $color__background-body;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
@@ -147,43 +162,41 @@ h1.tent-logo {
     text-decoration: none;
     position: absolute;
     margin: 15rem 0 0 1rem;
-    
-    
 }
-    #abutton:hover {
+
+#abutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
-    color: #fff;
+    color: $color__background-body;
     cursor: pointer;
     z-index: 12;
-
 }
 
 .beach {
-    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat top;
     background-size: cover;
     height: 250px;
     width: 555px;
     background-position: center;
     z-index: -10;
-    
-     a{
+    a {
         color: $color__text_light;
         font-size: $font__size_main;
         font-family: $font__2;
         font-weight: lighter;
         text-decoration: none;
         z-index: 2;
-     }
-}    
-    #bbutton {
+    }
+}
+
+#bbutton {
     display: flex;
     height: 50px;
     width: 150px;
-    border: 1px solid #fff;
+    border: 1px solid #e1e1e1;
     background-color: transparent;
     font-size: 20px;
-    color: #fff;
+    color: $color__background-body;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
@@ -191,33 +204,30 @@ h1.tent-logo {
     text-decoration: none;
     position: absolute;
     margin: 10rem 0 0 1rem;
-    
 }
-    #bbutton:hover {
+
+#bbutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
-    color: #fff;
+    color: $color__background-body;
     cursor: pointer;
     z-index: 12;
 }
 
-
-.failure{
+.failure {
     display: flex;
-    
 }
 
 .view {
-    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat top;
     background-size: cover;
     height: 270px;
     width: 270px;
     z-index: -1;
-    border-right: 20px solid #fff;
+    border-right: 20px solid $color__background-body;
     background-position: center;
     z-index: -10;
-    
-     a{
+    a {
         color: $color__text_light;
         font-size: 1.5rem;
         font-family: $font__2;
@@ -226,14 +236,15 @@ h1.tent-logo {
         z-index: 2;
     }
 }
-    #cbutton {
+
+#cbutton {
     display: flex;
     height: 50px;
     width: 150px;
-    border: 1px solid #fff;
+    border: 1px solid $color__background-body;
     background-color: transparent;
     font-size: 20px;
-    color: #fff;
+    color: $color__background-body;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
@@ -241,26 +252,25 @@ h1.tent-logo {
     text-decoration: none;
     position: absolute;
     margin: 10rem 0 0 1rem;
-    
 }
-    #cbutton:hover {
+
+#cbutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
-    color: #fff;
+    color: $color__background-body;
     cursor: pointer;
     z-index: 12;
 }
 
 .sky {
-    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/night-sky.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/night-sky.jpg) no-repeat top;
     background-size: cover;
     height: 270px;
     width: 270px;
     z-index: -1;
     background-position: center;
     z-index: -10;
-    
-     a{
+    a {
         color: $color__text_light;
         font-size: 1.5rem;
         font-family: $font__2;
@@ -268,15 +278,16 @@ h1.tent-logo {
         text-decoration: none;
         z-index: 2;
     }
-}    
-    #dbutton {
+}
+
+#dbutton {
     display: flex;
     height: 50px;
     width: 150px;
-    border: 1px solid #fff;
+    border: 1px solid $color__background-body;
     background-color: transparent;
     font-size: 20px;
-    color: #fff;
+    color: $color__background-body;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
@@ -284,16 +295,15 @@ h1.tent-logo {
     text-decoration: none;
     position: absolute;
     margin: 10rem 0 0 1rem;
-    
 }
-    #dbutton:hover {
+
+#dbutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
-    color: #fff;
+    color: $color__background-body;
     cursor: pointer;
     z-index: 12;
 }
-
 
 a.morebutton {
     display: flex;
@@ -309,8 +319,9 @@ a.morebutton {
     text-transform: uppercase;
     font-weight: lighter;
     text-decoration: none;
-}   
-    a.morebutton:hover{
+}
+
+a.morebutton:hover {
     display: flex;
     height: 50px;
     width: 250px;
@@ -322,48 +333,42 @@ a.morebutton {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    text-decoration: none;  
-    }
-    
+    text-decoration: none;
+}
+
 // Begin About  ===================================================================================
-
-.page-template-about{
-
- .entry-header{
-    height:100vh;
-    display: flex;
-    align-items: center;
-    font-family: $font__3;
-    font-size: 48px;
-    text-transform: uppercase;
-    flex: 1 1;
-    color: $color__background-body;
-    background-size: cover,cover;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    height: 100vh;
-    width: 100vw;
+.page-template-about {
+    .entry-header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        font-family: $font__3;
+        font-size: 48px;
+        text-transform: uppercase;
+        flex: 1 1;
+        color: $color__background-body;
+        background-size: cover, cover;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+    }
+    .entry-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 13.5rem 1rem 13.5rem;
+        font-family: $font__2;
+    }
+    .entry-content h2 {
+        text-align: center;
+        font-family: $font__3;
+        font-size: 34px;
+        text-transform: uppercase;
+    }
 }
 
-
-.entry-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 13.5rem 1rem 13.5rem;
-    font-family: $font__2;
-
-}
-
-.entry-content h2{
-   text-align: center;
-   font-family: $font__3;
-   font-size: 34px;
-   text-transform: uppercase;
-
-}
-}
 //  Shop Stuff ==============================================================================
 .shopstuff {
     display: flex;
@@ -379,19 +384,17 @@ a.morebutton {
 .product-info-container {
     display: flex;
     justify-content: center;
-    
 }
 
-.product-type-blocks{
+.product-type-blocks {
     display: flex;
     flex-direction: row;
     height: 60vh;
     width: 90vw;
     justify-content: space-around;
-    
 }
 
-.product-type-block-wrapper{
+.product-type-block-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -407,6 +410,7 @@ a.morebutton {
         width: 70px;
     }
 }
+
 .product-type-block-wrapper:hover {
     border: 1px solid $color__text-orange;
 }
@@ -427,22 +431,22 @@ a.btn {
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-
 }
+
 a.btn:hover {
     background-color: #175751;
     color: $color__background-body;
     cursor: pointer;
     z-index: 12;
 }
-.sdesc{
+
+.sdesc {
     display: flex;
     height: 1vh;
     width: 1vw;
-
 }
-//  Journal front Page ==============================================================================
 
+//  Journal front Page ==============================================================================
 .habj {
     display: flex;
     height: 5rem;
@@ -456,15 +460,16 @@ a.btn:hover {
     display: flex;
     justify-content: center;
 }
+
 .journal {
     display: flex;
     flex-direction: row;
     height: 500px;
     width: 85vw;
     justify-content: space-around;
-    justify-self: center;
-    // padding: 2rem 0 2rem 0;
+    justify-self: center; // padding: 2rem 0 2rem 0;
 }
+
 .thumbs {
     display: flex;
     flex-direction: column;
@@ -473,13 +478,13 @@ a.btn:hover {
     border: 1px solid $color__background-hr;
     justify-content: flex-start;
     align-items: left;
-    img{
-    display: flex;
-    height: 60vh;
-    width: 40vw;
-    border-bottom: 3px solid $color__background-hr;
-}
-    a{
+    img {
+        display: flex;
+        height: 60vh;
+        width: 40vw;
+        border-bottom: 3px solid $color__background-hr;
+    }
+    a {
         text-decoration: none;
         color: black;
         border: 1px solid $color__black;
@@ -497,13 +502,15 @@ a.btn:hover {
         padding-left: 1rem;
     }
 }
-div.jtitle{
-   font-size: 21px;
+
+div.jtitle {
+    font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
     color: $color__brand-green;
     padding-left: 1rem;
 }
+
 #jbutton {
     display: flex;
     height: 40px;
@@ -520,126 +527,119 @@ div.jtitle{
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    
 }
-    #jbutton:hover {
+
+#jbutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
-    color: #fff;
+    color: $color__background-body;
     cursor: pointer;
     z-index: 12;
 }
+
 // Journal Page ==================================================================================
-.blog{
-    .entry-header {   
-    display: flex;
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20vh;
-    img {
-        width: 60vw;
-        // position: absolute;
+.blog {
+    .entry-header {
+        display: flex;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+        img {
+            width: 60vw; // position: absolute;
+        }
+        h2 {
+            display: flex;
+            align-self: left;
+            background-color: $color__green;
+            color: $color__background-body;
+            font-size: 33.6px;
+            font-size: 2.1rem;
+            padding: .25rem 1.5rem .25rem 1.5rem;
+            position: absolute;
+            margin: 2.25rem 0 0 4rem;
+            max-width: 40%;
+            a {
+                color: $color__background-body;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
     }
-    h2{
-    display: flex;
-    align-self: left;
-    background-color: $color__green;
-    color: #fff;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    padding: .25rem 1.5rem .25rem 1.5rem;
-    position: absolute;
-    margin: 2.25rem 0 0 4rem;
-    max-width: 40%;
-    a{
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
+    .entry-meta {
+        // display: flex;
+        width: 40vw;
+        background-color: $color__green;
+        color: $color__background-body;
+        padding: .25rem 1.5rem;
+        margin: 0 0 0 16rem;
     }
+    .entry-content {
+        flex-direction: column;
+        padding: 0 3.5rem 0 3.5rem;
+        font-family: $font__2;
     }
-}
-.entry-meta { 
-    // display: flex;
-    width: 40vw;
-    background-color: $color__green;
-    color: #fff;
-    padding: .25rem 1.5rem;
-    margin: 0 0 0 16rem;
-}
-.entry-content {
-    flex-direction: column;
-    padding: 0 3.5rem 0 3.5rem;
-    font-family: $font__2;
-}
-div.jbtn{
-    padding-left: 2.5rem;
+    div.jbtn {
+        padding-left: 2.5rem;
+    }
 }
 
-}
 // Single ==================================================================================
-
 .post-template-default {
-
-     
-         .entry-header {   
-    display: flex;
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20vh;
-    img {
-        width: 60vw;
-        
+    .entry-header {
+        display: flex;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+        img {
+            width: 60vw;
+        }
+        h1 {
+            display: flex;
+            align-self: left;
+            background-color: $color__green;
+            color: $color__background-body;
+            font-size: 33.6px;
+            font-size: 2.1rem;
+            padding: .25rem 1.5rem .25rem 1.5rem;
+            position: absolute;
+            margin: 2.25rem 0 0 4rem;
+            max-width: 40%;
+            a {
+                color: $color__background-body;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
     }
-    h1{
-    display: flex;
-    align-self: left;
-    background-color: $color__green;
-    color: #fff;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    padding: .25rem 1.5rem .25rem 1.5rem;
-    position: absolute;
-    margin: 2.25rem 0 0 4rem;
-    max-width: 40%;
-    a{
-        color: #fff;
+    .entry-meta {
+        // display: flex;
+        width: 40vw;
+        background-color: $color__green;
+        color: $color__background-body;
+        padding: .25rem 1.5rem;
+        margin: 0 0 0 16rem;
+        a {
+            text-decoration: none;
+            color: $color__background-body;
+        }
+    }
+    .entry-content {
+        padding: 0 3.5rem 0 3.5rem;
+        font-family: $font__2;
+    }
+    .entry-footer {
+        padding-left: 2.5rem;
         text-transform: uppercase;
-        text-decoration: none;
+        font-family: $font__3;
+        a {
+            color: $color__green;
+            text-decoration: none;
+        }
     }
-    }
-}
-.entry-meta { 
-    // display: flex;
-    width: 40vw;
-    background-color: $color__green;
-    color: #fff;
-    
-    padding: .25rem 1.5rem;
-    margin: 0 0 0 16rem;
-    a {
-       text-decoration: none;
-       color: #fff;
-    }
-}
-.entry-content {
-    padding: 0 3.5rem 0 3.5rem;
-    font-family: $font__2;
-}
-
-.entry-footer {
-    padding-left: 2.5rem;
-    text-transform: uppercase;
-    font-family: $font__3;
-    
-    a {
-        color: $color__green;
-        text-decoration: none;
-    }
-}
 }
 
 .comments-area {
@@ -660,97 +660,123 @@ div.jbtn{
 }
 
 //  Single Shop Item =================================================================================
-
 .whole {
     display: flex;
     flex-direction: row;
     padding: 0 0 6rem 0;
 }
+
 .single {
-    
     img {
         padding: 5rem 0 0 5rem;
     }
     .wrap {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    padding: 3rem 0 0 2rem;
-    h1 {
-       text-transform: uppercase;
-       color: $color__text-orange;
-       font-size: 38px;
-    }
-    p{
+        display: flex;
+        flex-direction: column;
         width: 40vw;
-        padding: 0 0 0 1rem;
+        padding: 3rem 0 0 2rem;
+        h1 {
+            text-transform: uppercase;
+            color: $color__text-orange;
+            font-size: 38px;
+        }
+        p {
+            width: 40vw;
+            padding: 0 0 0 1rem;
+        }
+        .price-meta {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        button {
+            background: $color__background-body;
+            border: 1px solid #000;
+            color: #000;
+            color: #000;
+            cursor: pointer;
+            font-family: $font__3;
+            font-size: 14.4px;
+            font-size: .9rem;
+            line-height: 1;
+            padding: .75rem 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: $color__green;
+            border: 1px solid $color__green;
+            color: $color__background-body;
+            cursor: pointer;
+        }
     }
-    
-    .price-meta {
-      font-size: 20px;
-      font-weight: bolder;
-    }
-    button {
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    color: #000;
-    cursor: pointer;
-    font-family: $font__3;
-    font-size: 14.4px;
-    font-size: .9rem;
-    line-height: 1;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    }
-    button:hover {
-    background-color: $color__green;
-    border: 1px solid $color__green;
-    color: #fff;
-    cursor: pointer;
-    }
-}
 }
 
 //  Search ==========================================================================
-
-fieldset{
+fieldset {
     border: 0;
     margin: 0;
     padding: .7rem 1rem .4rem;
-
-    .search-submit{
-    display: inline;
-    color: $color__green;
-    font-size: 16px;
-    line-height: 1;
-    text-shadow: 0 1px 0 hsla(0,0%,100%,.8);
+    .search-submit {
+        display: inline;
+        color: $color__green;
+        font-size: 16px;
+        line-height: 1;
+        text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
     }
-
-label {    
-    .search-field {
-        width: 0px;
-        transition: .5s;
-    }
-
-    &.expanded {
-        input {
-            width: 175px;
+    label {
+        .search-field {
+            width: 0px;
+            transition: .5s;
+        }
+        &.expanded {
+            input {
+                width: 175px;
+            }
         }
     }
-}  
+    input.search-field {
+        border: none;
+        background: transparent;
+    }
+}
 
-input.search-field {
-    border: none;
-    background: transparent;
+.search-results {
+    .site-main {
+        width: 70vw;
+        height: 70vh;
+        padding: 5rem 0 0 0;
+        h1 {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: $color__black;
+            padding: 0 0 0 2.5rem;
+        }
+        p {
+            width: 40vw;
+            padding: 0 0 0 5rem;
+        }
+    }
 }
+
+.search-no-results {
+    .page-content {
+        width: 70vw;
+        height: 70vh;
+        padding: 10rem 0 0 0;
+    }
+    fieldset label .search-field {
+        width: 475px;
+        background: $color__background-hr;
+    }
 }
+
 //  Begin Sidebar =================================================================================
-
 #secondary {
     width: 130vw;
 }
+
 .widget-area {
     display: flex;
     flex-direction: column;
@@ -759,159 +785,155 @@ input.search-field {
     padding: 3rem 0 0 0;
     border-left: 1px solid #e1e1e1;
 }
+
 .widget {
     margin: 0 0 1.5rem;
     padding: 3rem 0 0 3rem;
 }
+
 .widget_text {
     // display: flex;
-    
 }
+
 .widget-title {
     font-family: $font__3;
     font-size: 24px;
     text-transform: uppercase;
-
 }
+
 .textwidget {
     font-family: $font__2;
 }
+
 .textwidget i {
     padding: 0 1rem 0 1rem;
-}   
+}
+
 .textwidget a {
     color: $color__green;
     font-family: $font__2;
     text-decoration: none;
-    
 }
+
 .textwidget a:hover {
     color: $color__black;
 }
+
 .tent-biz-hours-class p {
     font-family: $font__2;
-    
 }
+
 .dayweek {
     font-weight: bolder;
 }
+
 .widget_archive ul {
     list-style: none;
     font-family: $font__2;
     padding: 0;
-    a{color: $color__green;
-      text-decoration: none;
-       
+    a {
+        color: $color__green;
+        text-decoration: none;
     }
 }
 
 // Archive ===================================================================================
-
-.post-type-archive-product, .tax-product-type {
-    
-  .site-main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .page-header {
-    display: block;
-    width: 90%;
-    text-align: center;
-    border-bottom: 1px dashed $color__brand-grey;
-    margin-bottom: 5rem;
-    padding-top: 5rem;
-  }
-  article {
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    height: 18rem;
-    margin: 0.5rem;
-    border: 1px solid $color__background-pre;
-      .entry-header {
+.post-type-archive-product,
+.tax-product-type {
+    .site-main {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: auto;
-      }
-      
-      img {
-        flex: 4;
-        border-bottom: 4px solid $color__brand-grey;
-        height: 200px;
-        :hover {
-        border-bottom: 0;    
-        }
-      }
-      .entry-container {
-        display: flex;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        flex: 1;
-      
-      a {
-        color: black;
-        text-decoration: none; 
-      }
-      .entry-title {
-        font-family: $font__2;
-        font-size: 1rem;
-        font-weight: normal; 
-        
-      }
-    } .entry-content {
-        display: none;
     }
-  }
+    .page-header {
+        display: block;
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px dashed $color__brand-grey;
+        margin-bottom: 5rem;
+        padding-top: 5rem;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+        height: 18rem;
+        margin: 0.5rem;
+        border: 1px solid $color__background-pre;
+        .entry-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: auto;
+        }
+        img {
+            flex: 4;
+            border-bottom: 4px solid $color__brand-grey;
+            height: 200px;
+             :hover {
+                border-bottom: 0;
+            }
+        }
+        .entry-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            .entry-title {
+                font-family: $font__2;
+                font-size: 1rem;
+                font-weight: normal;
+            }
+        }
+        .entry-content {
+            display: none;
+        }
+    }
 }
 
 .price-meta {
     display: flex;
     align-items: baseline;
     font-family: $font__2;
-    
 }
+
 .price-meta::before {
-   content: ".....$";
+    content: ".....$";
 }
 
 // Taxonomy ===================================================================================
-
 .tax-product-type {
     article {
         height: 40vh;
     }
-    .entry-title{
+    .entry-title {
         a {
-          text-decoration: none;
-          color: black;
-          
+            text-decoration: none;
+            color: black;
         }
     }
-} 
-
-
+}
 
 // Find Us ===================================================================================
-
 .post-16 {
     width: 64vw;
     margin: 5rem 0 0 5rem;
 }
 
-
 // Begin footer ===================================================================================
-
 #colophon.site-footer {
     display: flex;
     background: url(../../images/dark-wood.png);
     background-size: 512px 512px;
-    color: $color__background-body;
-    // width: $wide__screen-width;
+    color: $color__background-body; // width: $wide__screen-width;
 }
+
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -943,15 +965,11 @@ input.search-field {
     img {
         width: auto;
         height: 50px;
-        
     }
-
-    
 }
 
 .contact-info {
     margin: 2rem 0 0 3rem;
-
     p {
         display: flex;
         justify-content: flex-start;
@@ -959,14 +977,14 @@ input.search-field {
             margin: .3rem;
         }
     }
-
 }
+
 .business-hours {
     margin: 2rem 0 1rem 3rem;
 }
+
 .copyright {
     align-self: flex-end;
     font-family: $font__3;
     margin: 2rem 0 2rem 0;
-    
 }

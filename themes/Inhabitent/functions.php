@@ -119,7 +119,7 @@ if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'products' )
 
 		$query->set( 'posts_per_page', '6' );
 		$query->set( 'orderby', 'title' );
-                $query->set( 'order', 'DESC' );
+        $query->set( 'order', 'DESC' );
 	}
 
 }
