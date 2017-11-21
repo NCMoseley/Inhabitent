@@ -771,7 +771,8 @@ p.site-description {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: absolute; }
+  position: absolute;
+  position: fixed; }
 
 h1.tent-logo {
   position: absolute;
@@ -795,9 +796,6 @@ h1.tent-logo {
 .main-navigation a:hover {
   color: #fff9c0; }
 
-#site-navigation.main-navigation {
-  position: fixed; }
-
 #site-navigation.fade-in h1.tent-logo {
   position: absolute;
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
@@ -815,6 +813,9 @@ h1.tent-logo {
   text-transform: uppercase;
   font-family: "Novocento";
   font-weight: lighter; }
+
+#site-navigation.fade-in ul li a:hover {
+  color: #000; }
 
 .main-navigation.fade-in {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1539,7 +1540,10 @@ fieldset {
     color: #248a83;
     font-size: 16px;
     line-height: 1;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    cursor: pointer; }
+    fieldset .search-submit :hover {
+      color: #000; }
   fieldset label .search-field {
     width: 0px;
     -webkit-transition: .5s;

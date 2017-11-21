@@ -35,6 +35,7 @@ p.site-description {
     display: flex;
     justify-content: flex-end;
     position: absolute;
+    position: fixed;
 }
 
 h1.tent-logo {
@@ -62,9 +63,7 @@ h1.tent-logo {
     color: $color__background-ins;
 }
 
-#site-navigation.main-navigation {
-    position: fixed;
-}
+
 
 #site-navigation.fade-in {
     h1.tent-logo {
@@ -84,9 +83,12 @@ h1.tent-logo {
         text-transform: uppercase;
         font-family: $font__3;
         font-weight: lighter;
+        
     }
+    ul li a:hover {
+            color: $color__black;
+        }
 }
-
 .main-navigation.fade-in {
     background-color: hsla(0, 0%, 100%, .85);
     border-bottom: 1px solid #e1e1e1;
@@ -722,6 +724,10 @@ fieldset {
         font-size: 16px;
         line-height: 1;
         text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+        cursor: pointer;
+        :hover {
+            color: $color__black;
+        }
     }
     label {
         .search-field {
