@@ -10,7 +10,10 @@
 
     label.classList.toggle('expanded');
 	
-    
+     label.onblur = function() {
+        // form.classList.toggle('expanded');
+        label.classList.toggle('expanded');
+        };
 }
 
 })();
