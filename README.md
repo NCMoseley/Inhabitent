@@ -6,24 +6,16 @@
 
 A webpage dedicated to camping and glamping in the most hipster way possible. 
 
-
 # README
 
 ## Table of Contents
 
 * [Quick Start](#quick-start)
-* [Library Family](#library-family)
 * [Values](#values)
 * [Operators](#operators)
 * [Credits](#credits)
 
 ## Quick Start
-
-
-
-## Library Family
-
-
 
 ## Values
 
@@ -32,6 +24,8 @@ A webpage dedicated to camping and glamping in the most hipster way possible.
 ### References 
 
 Trnsfonter to generate my fonts. https://transfonter.org Fonts provided by Red Academy
+
+Filipe Merker on Stack Overflow provided me with the code for my navigation bar to 'toggle class' and change color. https://stackoverflow.com/questions/32856341/pure-js-add-and-remove-toggle-class-after-scrolling-x-amount
 
 
 ### 4. Update the proxy in `gulpfile.js`
