@@ -1,5 +1,7 @@
 
 
+to be completed..........
+
 ![](https: post pic herepng)
 
 # Inhabitents Interactive Webpage
@@ -7,6 +9,8 @@
 A webpage dedicated to camping and glamping in the most hipster way possible. 
 
 # README
+
+
 
 ## Table of Contents
 
