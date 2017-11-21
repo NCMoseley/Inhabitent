@@ -98,6 +98,7 @@ add_filter( 'stylesheet_uri', 'Inhabitents_minified_css', 10, 2 );
 function Inhabitents_scripts() {
 	// wp_enqueue_style( 'Inhabitents-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
+
     
 	wp_enqueue_script('jquery');
 
@@ -112,7 +113,21 @@ function Inhabitents_scripts() {
 	}
 }
 
+function tax_title( $query ) {
+
+if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'products' ) ) {
+
+		$query->set( 'posts_per_page', '6' );
+		$query->set( 'orderby', 'title' );
+                $query->set( 'order', 'DESC' );
+	}
+
+}
+
+
 add_action( 'wp_enqueue_scripts', 'Inhabitents_scripts' );
+
+add_action( 'pre_get_posts', 'tax_title' );
 
 /**
  * Custom template tags for this theme.

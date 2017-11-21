@@ -77,6 +77,7 @@ h1.tent-logo {
     
 }
 // Latest Adventures ==============================================================================
+
 .adventures-section {
    
     h2{
@@ -97,20 +98,30 @@ h1.tent-logo {
     width: $wide__screen-width;
     height: 40rem;
     padding-right: 5rem;
+    h3{
+        padding: 1rem;
+    }
 }
 .adventure-list {
     display: flex;
 }
 
+.strap {
+    display:flex;
+    padding: 1rem 1rem 0 0;
+    
+}
+
+
 .canoe {
     display: flex;
     flex-direction: column;
-    background: url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/canoe-girl.jpg) no-repeat top;
     background-size: cover;
     background-position: center;
     height: 540px;
     width: 540px;
-    z-index: -10;
+   
     
      .text {
         color: $color__text_light;
@@ -120,35 +131,13 @@ h1.tent-logo {
         text-decoration: none;
         z-index: 2;
     }
-    // .button {
-    // display: flex;
-    // height: 50px;
-    // width: 250px;
-    // border: 1px solid #fff;
-    // background-color: transparent;
-    // margin-left: 6rem;
-    // font-size: 20px;
-    // font-family: $font__3;
-    // justify-content: center;
-    // align-items: center;
-    // text-transform: uppercase;
-    // text-decoration: none;
-    // }
-    // .button:hover {
-    // background-color: $color__green;
-    // border: 1px solid $color__green;
-    // color: #fff;
-    // cursor: pointer;
-    // }
 }
-
-#button {
+    #abutton {
     display: flex;
     height: 50px;
-    width: 250px;
+    width: 150px;
     border: 1px solid #fff;
     background-color: transparent;
-    // margin-left: 6rem;
     font-size: 20px;
     color: #fff;
     font-family: $font__3;
@@ -156,22 +145,25 @@ h1.tent-logo {
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
+    position: absolute;
+    margin: 15rem 0 0 1rem;
+    
     
 }
-    #button:hover {
+    #abutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
     color: #fff;
     cursor: pointer;
     z-index: 12;
+
 }
- 
 
 .beach {
-    background: url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat top;
     background-size: cover;
     height: 250px;
-    width: 540px;
+    width: 555px;
     background-position: center;
     z-index: -10;
     
@@ -182,54 +174,41 @@ h1.tent-logo {
         font-weight: lighter;
         text-decoration: none;
         z-index: 2;
-    }
-    .button {
+     }
+}    
+    #bbutton {
     display: flex;
     height: 50px;
-    width: 250px;
+    width: 150px;
     border: 1px solid #fff;
     background-color: transparent;
-    margin-left: 6rem;
     font-size: 20px;
+    color: #fff;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    }
+    position: absolute;
+    margin: 10rem 0 0 1rem;
+    
 }
+    #bbutton:hover {
+    background-color: $color__green;
+    border: 1px solid $color__green;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+}
+
+
 .failure{
     display: flex;
-    border-top: 20px solid #fff;
-     background-position: center;
-    z-index: -10;
     
-     a{
-        color: $color__text_light;
-        font-size: $font__size_main;
-        font-family: $font__2;
-        font-weight: lighter;
-        text-decoration: none;
-        z-index: 2;
-    }
-    .button {
-    display: flex;
-    height: 50px;
-    width: 250px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    margin-left: 6rem;
-    font-size: 20px;
-    font-family: $font__3;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    }
 }
 
 .view {
-    background: url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat top;
     background-size: cover;
     height: 270px;
     width: 270px;
@@ -246,23 +225,34 @@ h1.tent-logo {
         text-decoration: none;
         z-index: 2;
     }
-    .button {
+}
+    #cbutton {
     display: flex;
     height: 50px;
-    width: 250px;
+    width: 150px;
     border: 1px solid #fff;
     background-color: transparent;
-    margin-left: 6rem;
     font-size: 20px;
+    color: #fff;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    }
+    position: absolute;
+    margin: 10rem 0 0 1rem;
+    
 }
+    #cbutton:hover {
+    background-color: $color__green;
+    border: 1px solid $color__green;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+}
+
 .sky {
-    background: url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),gray url(../../images/adventure-photos/night-sky.jpg) no-repeat top;
     background-size: cover;
     height: 270px;
     width: 270px;
@@ -278,21 +268,32 @@ h1.tent-logo {
         text-decoration: none;
         z-index: 2;
     }
-    .button {
+}    
+    #dbutton {
     display: flex;
     height: 50px;
-    width: 250px;
+    width: 150px;
     border: 1px solid #fff;
     background-color: transparent;
-    margin-left: 6rem;
     font-size: 20px;
+    color: #fff;
     font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    }
+    position: absolute;
+    margin: 10rem 0 0 1rem;
+    
 }
+    #dbutton:hover {
+    background-color: $color__green;
+    border: 1px solid $color__green;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+}
+
 
 a.morebutton {
     display: flex;
@@ -308,8 +309,22 @@ a.morebutton {
     text-transform: uppercase;
     font-weight: lighter;
     text-decoration: none;
+}   
+    a.morebutton:hover{
+    display: flex;
+    height: 50px;
+    width: 250px;
+    border: 1px solid $color__black;
+    background-color: transparent;
+    font-size: 20px;
+    color: $color__black;
+    font-family: $font__3;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;  
+    }
     
-}
 // Begin About  ===================================================================================
 
 .page-template-about{
@@ -865,7 +880,18 @@ input.search-field {
 
 // Taxonomy ===================================================================================
 
-
+.tax-product-type {
+    article {
+        height: 40vh;
+    }
+    .entry-title{
+        a {
+          text-decoration: none;
+          color: black;
+          
+        }
+    }
+} 
 
 
 

@@ -59,7 +59,7 @@ get_header(); ?>
             <?php
                $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => '3' );
 
-               $product_posts = get_posts( $args ); // returns an array of posts
+               $product_posts = get_posts( $args ); 
               ?>
 			  
              <h1 class="habj">Inhabitant Journal</h1>
@@ -79,25 +79,29 @@ get_header(); ?>
               <?php endforeach; wp_reset_postdata(); ?>
             </section>
         </div>
+
+
 <!-- Latest Adventures -->
+
 	        <section class="adventures-section">
+                
                            <h2>Latest Adventures</h2>
-		              <!-- <div class="latest-adventures"></div> -->
+		              
         <div class="adventures-container">
           <ul class="adventure-list">
-            <li class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3></li><a id="button" href="https://github.com/NCMoseley?tab=repositories">READ MORE</a>
-            <li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3><a class="button" href="">READ MORE</a></li>
+            <div class="strap"><li class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3></li><a id="abutton" href="http://www.anmorecamp-rv.ca/">READ MORE</a></div>
+            <div class="strap"><li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3></li><a id="bbutton" href="http://www.capilanoriverrvpark.com/">READ MORE</a></div>
 		 <div class="failure">
-            <li class="view"><h3><a href="">Taking in the View at Big Mountain</a></h3><a class="button" href="">READ MORE</a></li>
-            <li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3><a class="button" href="">READ MORE</a></li>
-		</div><!-- failure -->
+            <div class="strap"><li class="view"><h3><a href="http://www.metrovancouver.org/services/parks/parks-greenways-reserves/capilano-river-regional-park">Taking in the View at Big Mountain</a></h3></li><a id="cbutton" href="">READ MORE</a></div>
+            <div class="strap"><li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3></li><a id="dbutton" href="https://westcoastsports.ca/">READ MORE</a></div>
+		</div>
           </ul>
                <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>
                <h4 class="more"></h4>
 		</div> <!-- adventures-container -->
     </section>
 
-			<?php /* Start the Loop */ ?>
+			
 			<?php while ( have_posts() ) : the_post(); ?>
              
              
