@@ -724,7 +724,8 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 5rem; }
 
 .navigation {
   display: none; }
@@ -772,8 +773,7 @@ p.site-description {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: absolute;
-  max-width: 1240px; }
+  position: absolute; }
 
 h1.tent-logo {
   position: absolute;
@@ -1546,7 +1546,7 @@ fieldset {
     color: #248a83;
     text-decoration: none; }
 
-.post-type-archive-product .site-main {
+.post-type-archive-product .site-main, .tax-product-type .site-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1561,7 +1561,7 @@ fieldset {
       -ms-flex-align: center;
           align-items: center; }
 
-.post-type-archive-product .page-header {
+.post-type-archive-product .page-header, .tax-product-type .page-header {
   display: block;
   width: 90%;
   text-align: center;
@@ -1569,7 +1569,7 @@ fieldset {
   margin-bottom: 5rem;
   padding-top: 5rem; }
 
-.post-type-archive-product article {
+.post-type-archive-product article, .tax-product-type article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1581,7 +1581,7 @@ fieldset {
   height: 18rem;
   margin: 0.5rem;
   border: 1px solid #eee; }
-  .post-type-archive-product article .entry-header {
+  .post-type-archive-product article .entry-header, .tax-product-type article .entry-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1596,15 +1596,15 @@ fieldset {
         -ms-flex-align: center;
             align-items: center;
     height: auto; }
-  .post-type-archive-product article img {
+  .post-type-archive-product article img, .tax-product-type article img {
     -webkit-box-flex: 4;
         -ms-flex: 4;
             flex: 4;
     border-bottom: 4px solid #808080;
     height: 200px; }
-    .post-type-archive-product article img :hover {
+    .post-type-archive-product article img :hover, .tax-product-type article img :hover {
       border-bottom: 0; }
-  .post-type-archive-product article .entry-container {
+  .post-type-archive-product article .entry-container, .tax-product-type article .entry-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1617,14 +1617,14 @@ fieldset {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    .post-type-archive-product article .entry-container a {
+    .post-type-archive-product article .entry-container a, .tax-product-type article .entry-container a {
       color: black;
       text-decoration: none; }
-    .post-type-archive-product article .entry-container .entry-title {
+    .post-type-archive-product article .entry-container .entry-title, .tax-product-type article .entry-container .entry-title {
       font-family: "Merriweather";
       font-size: 1rem;
       font-weight: normal; }
-  .post-type-archive-product article .entry-content {
+  .post-type-archive-product article .entry-content, .tax-product-type article .entry-content {
     display: none; }
 
 .price-meta {

@@ -2,6 +2,7 @@
 .site-content {
     display: flex;
     margin: auto;   
+    margin-bottom: 5rem;
 }
 
 .navigation {
@@ -39,7 +40,6 @@ p.site-description  {
     border-bottom: 1px solid #e1e1e1;
     justify-content: flex-end;
     position: absolute;
-    max-width: 1240px;
 }
 
 // .site-header.reverse-header {
@@ -710,7 +710,6 @@ fieldset{
     color: $color__green;
     font-size: 16px;
     line-height: 1;
-    // padding: .6rem 1rem .4rem;
     text-shadow: 0 1px 0 hsla(0,0%,100%,.8);
     }
 
@@ -793,7 +792,7 @@ input.search-field {
 
 // Archive ===================================================================================
 
-.post-type-archive-product {
+.post-type-archive-product, .tax-product-type {
     
   .site-main {
     display: flex;
@@ -864,6 +863,10 @@ input.search-field {
    content: ".....$";
 }
 
+// Taxonomy ===================================================================================
+
+
+
 
 
 // Find Us ===================================================================================
@@ -875,6 +878,7 @@ input.search-field {
 
 
 // Begin footer ===================================================================================
+
 #colophon.site-footer {
     display: flex;
     background: url(../../images/dark-wood.png);
