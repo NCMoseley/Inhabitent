@@ -14,11 +14,20 @@ get_header(); ?>
 
 			<header class="page-header">
 
-              <h1 class="page-title">Shop Stuff</h1>
+              <h1 class="title">Shop Stuff</h1>
 
 				<?php
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				    // the_archive_title( '<h1 class="page-title">', '</h1>'); 
+					// the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+
+				   <?php $terms = get_terms('product-type');
+                    echo '<ul class="product-type-list">';
+                    foreach ($terms as $term) {
+                            echo '<li><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
+                    }
+                    echo '</ul>'; ?>
+					
 			</header><!-- .page-header -->
 
            

@@ -1552,7 +1552,11 @@ fieldset {
     width: 175px; }
   fieldset input.search-field {
     border: none;
-    background: transparent; }
+    background: rgba(250, 250, 250, 0);
+    color: #248a83;
+    outline: none; }
+    fieldset input.search-field:focus {
+      background: rgba(191, 255, 131, 0.6); }
 
 .search-results .site-main {
   width: 70vw;
@@ -1645,6 +1649,31 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.post-type-archive-product .page-title,
+.tax-product-type .page-title {
+  display: none; }
+
+.post-type-archive-product .product-type-list,
+.tax-product-type .product-type-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Novocento";
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-transform: uppercase; }
+  .post-type-archive-product .product-type-list li a,
+  .tax-product-type .product-type-list li a {
+    text-decoration: none;
+    padding-right: 3rem;
+    color: #248a83; }
 
 .post-type-archive-product .page-header,
 .tax-product-type .page-header {

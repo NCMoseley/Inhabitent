@@ -742,7 +742,12 @@ fieldset {
     }
     input.search-field {
         border: none;
-        background: transparent;
+        background:rgba(250, 250, 250, 0.0);
+        color: $color__green;
+        outline: none;
+        &:focus {
+            background:rgba(191, 255, 131, 0.6);
+        }
     }
 }
 
@@ -851,6 +856,25 @@ fieldset {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+    }
+    .page-title{
+        display: none;
+    }
+    .product-type-list {
+    display: flex;
+    font-family: $font__3;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-transform: uppercase;
+    li a{
+        text-decoration: none;
+        padding-right: 3rem;
+        color: $color__green;
+    }
     }
     .page-header {
         display: block;
