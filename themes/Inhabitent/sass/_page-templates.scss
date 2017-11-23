@@ -51,16 +51,16 @@ h1.tent-logo {
 }
 
 .main-navigation a {
-    color: $color__text_light;
+    color: $color__background-hr    ;
     padding: 1rem;
     text-transform: uppercase;
     font-family: $font__3;
     font-weight: lighter;
-    text-shadow: 0 1px 0 hsla(0, 0%, 30%, .8);
+    // text-shadow: 0 1px 0 hsla(0, 0%, 30%, .8);
 }
 
 .main-navigation a:hover {
-    color: $color__background-ins;
+    color: $color__text-screen;
 }
 
 
@@ -84,10 +84,20 @@ h1.tent-logo {
         font-family: $font__3;
         font-weight: lighter;
         text-shadow: none;
-        
     }
     ul li a:hover {
             color: $color__black;
+        }
+        fieldset .search-submit {
+        display: inline;
+        color: $color__green;
+        font-size: 16px;
+        line-height: 1;
+        text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+        cursor: pointer;
+        :hover {
+            color: $color__black;
+        }
         }
 }
 .main-navigation.fade-in {
@@ -746,13 +756,12 @@ fieldset {
     padding: .7rem 1rem .4rem;
     .search-submit {
         display: inline;
-        color: $color__green;
+        color: $color__background-hr;   
         font-size: 16px;
         line-height: 1;
-        text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
-        cursor: pointer;
+        cursor: pointer;    
         :hover {
-            color: $color__black;
+            color: $color__text-screen;
         }
     }
     label {
@@ -772,7 +781,8 @@ fieldset {
         color: $color__green;
         outline: none;
         &:focus {
-            background:rgba(176, 226, 220, 0.527);
+            background:rgba(188, 255, 246, 0.527);
+            
         }
     }
 }
@@ -918,7 +928,6 @@ fieldset {
         }
     }
     .entry-meta {
-        // display: flex;
         width: 40vw;
         background-color: $color__green;
         color: $color__background-body;
@@ -988,7 +997,8 @@ fieldset {
         img {
             flex: 4;
             border-bottom: 4px solid $color__brand-grey;
-            height: 200px;
+            min-height: 200px;
+            max-height: 200px;  
              :hover {
                 border-bottom: 0;
             }
@@ -1025,9 +1035,13 @@ fieldset {
 }
 
 // Taxonomy ===================================================================================
+
 .tax-product-type {
     article {
-        height: 40vh;
+        height: 45vh;
+    }
+    img{
+        height: 200px;
     }
     .entry-title {
         a {

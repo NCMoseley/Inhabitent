@@ -545,7 +545,7 @@ a {
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: #5795af;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -785,15 +785,14 @@ h1.tent-logo {
   height: 50px; }
 
 .main-navigation a {
-  color: #fff;
+  color: #ccc;
   padding: 1rem;
   text-transform: uppercase;
   font-family: "Novocento";
-  font-weight: lighter;
-  text-shadow: 0 1px 0 rgba(77, 77, 77, 0.8); }
+  font-weight: lighter; }
 
 .main-navigation a:hover {
-  color: #fff9c0; }
+  color: #5795af; }
 
 #site-navigation.fade-in h1.tent-logo {
   position: absolute;
@@ -816,6 +815,16 @@ h1.tent-logo {
 
 #site-navigation.fade-in ul li a:hover {
   color: #000; }
+
+#site-navigation.fade-in fieldset .search-submit {
+  display: inline;
+  color: #248a83;
+  font-size: 16px;
+  line-height: 1;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  cursor: pointer; }
+  #site-navigation.fade-in fieldset .search-submit :hover {
+    color: #000; }
 
 .main-navigation.fade-in {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1556,13 +1565,12 @@ fieldset {
   padding: .7rem 1rem .4rem; }
   fieldset .search-submit {
     display: inline;
-    color: #248a83;
+    color: #ccc;
     font-size: 16px;
     line-height: 1;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
     cursor: pointer; }
     fieldset .search-submit :hover {
-      color: #000; }
+      color: #5795af; }
   fieldset label .search-field {
     width: 0px;
     -webkit-transition: .5s;
@@ -1575,7 +1583,7 @@ fieldset {
     color: #248a83;
     outline: none; }
     fieldset input.search-field:focus {
-      background: rgba(176, 226, 220, 0.527); }
+      background: rgba(188, 255, 246, 0.527); }
 
 .search-results .site-main {
   width: 70vw;
@@ -1802,7 +1810,8 @@ fieldset {
         -ms-flex: 4;
             flex: 4;
     border-bottom: 4px solid #808080;
-    height: 200px; }
+    min-height: 200px;
+    max-height: 200px; }
     .post-type-archive-product article img :hover,
     .tax-product-type article img :hover {
       border-bottom: 0; }
@@ -1846,7 +1855,10 @@ fieldset {
   content: ".....$"; }
 
 .tax-product-type article {
-  height: 40vh; }
+  height: 45vh; }
+
+.tax-product-type img {
+  height: 200px; }
 
 .tax-product-type .entry-title a {
   text-decoration: none;
