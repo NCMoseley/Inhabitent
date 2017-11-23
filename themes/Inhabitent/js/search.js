@@ -39,7 +39,7 @@ window.addEventListener('scroll', function(){
     
     scrollpos = window.scrollY;
 
-    if(scrollpos > 100){
+    if(scrollpos > 50){
         add_class_on_scroll();
     }
     else {

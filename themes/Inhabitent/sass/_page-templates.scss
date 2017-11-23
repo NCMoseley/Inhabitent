@@ -83,6 +83,7 @@ h1.tent-logo {
         text-transform: uppercase;
         font-family: $font__3;
         font-weight: lighter;
+        text-shadow: none;
         
     }
     ul li a:hover {
@@ -662,16 +663,26 @@ div.jtitle {
 }
 
 .form-submit {
-      input{
+      input#submit.submit{
           background-color: $color__green;
           border: 1px solid $color__green;
           color: $color__background-body;
+          font-size: 16px;
+          text-transform: uppercase;
           cursor: pointer;
           border-radius: 0;
       }
 
 }
-
+.wpcf7-form-control.wpcf7-submit {
+    background-color: $color__green;
+          border: 1px solid $color__green;
+          color: $color__background-body;
+          font-size: 16px;
+          text-transform: uppercase;
+          cursor: pointer;
+          border-radius: 0;
+}
 //  Single Shop Item =================================================================================
 .whole {
     display: flex;
@@ -758,7 +769,7 @@ fieldset {
         color: $color__green;
         outline: none;
         &:focus {
-            background:rgba(191, 255, 131, 0.6);
+            background:rgba(133, 226, 214, 0.527);
         }
     }
 }

@@ -403,8 +403,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6rem 1rem .4rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -812,7 +811,8 @@ h1.tent-logo {
   padding: 1rem;
   text-transform: uppercase;
   font-family: "Novocento";
-  font-weight: lighter; }
+  font-weight: lighter;
+  text-shadow: none; }
 
 #site-navigation.fade-in ul li a:hover {
   color: #000; }
@@ -1479,6 +1479,24 @@ div.jtitle {
     text-transform: uppercase;
     font-size: 28px; }
 
+.form-submit input#submit.submit {
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0; }
+
+.wpcf7-form-control.wpcf7-submit {
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0; }
+
 .whole {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1524,7 +1542,8 @@ div.jtitle {
     line-height: 1;
     padding: .75rem 1.5rem;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border-radius: 0; }
   .single .wrap button:hover {
     background-color: #248a83;
     border: 1px solid #248a83;
@@ -1556,7 +1575,7 @@ fieldset {
     color: #248a83;
     outline: none; }
     fieldset input.search-field:focus {
-      background: rgba(191, 255, 131, 0.6); }
+      background: rgba(133, 226, 214, 0.527); }
 
 .search-results .site-main {
   width: 70vw;
