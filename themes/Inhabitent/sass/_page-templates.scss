@@ -767,7 +767,7 @@ fieldset {
     label {
         .search-field {
             width: 0px;
-            transition: .5s;
+            transition: .8s;
         }
         &.expanded {
             input {
@@ -780,8 +780,11 @@ fieldset {
         background:rgba(250, 250, 250, 0.0);
         color: $color__green;
         outline: none;
+        text-transform: uppercase;
+        font-size: small;
+        line-height: 2;
         &:focus {
-            background:rgba(188, 255, 246, 0.527);
+            background:rgba(188, 255, 229, 0.527);
             
         }
     }

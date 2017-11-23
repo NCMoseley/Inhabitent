@@ -9,7 +9,7 @@
 		</div>
 
 		<label id="input">
-			<input type="search" class="search-field" placeholder="hit enter to search ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+			<input type="search" class="search-field" placeholder="Type and press enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 		</label>
 		
 	</fieldset>
