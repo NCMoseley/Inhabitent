@@ -661,6 +661,17 @@ div.jtitle {
     }
 }
 
+.form-submit {
+      input{
+          background-color: $color__green;
+          border: 1px solid $color__green;
+          color: $color__background-body;
+          cursor: pointer;
+          border-radius: 0;
+      }
+
+}
+
 //  Single Shop Item =================================================================================
 .whole {
     display: flex;
@@ -703,6 +714,7 @@ div.jtitle {
             padding: .75rem 1.5rem;
             text-decoration: none;
             text-transform: uppercase;
+            border-radius: 0;
         }
         button:hover {
             background-color: $color__green;
