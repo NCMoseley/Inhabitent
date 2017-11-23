@@ -26,9 +26,12 @@ get_header(); ?>
 			  <?php while ( have_posts() ) : the_post(); ?>
 
             
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<?php get_template_part( 'template-parts/content' ); ?>
+
+				<div class="jbtn">
+                  <a id="jbutton" href="<?php the_permalink(); ?>">Read More →</a>
+			      <?php the_posts_navigation(); ?>
+			    </div>
 
 			<?php endwhile; ?>
 

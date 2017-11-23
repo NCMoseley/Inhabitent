@@ -470,7 +470,7 @@ a.btn:hover {
     height: 500px;
     width: 85vw;
     justify-content: space-around;
-    justify-self: center; // padding: 2rem 0 2rem 0;
+    justify-self: center; 
 }
 
 .thumbs {
@@ -541,6 +541,7 @@ div.jtitle {
 }
 
 // Journal Page ==================================================================================
+
 .blog {
     .entry-header {
         display: flex;
@@ -589,6 +590,7 @@ div.jtitle {
 }
 
 // Single ==================================================================================
+
 .post-template-default {
     .entry-header {
         display: flex;
@@ -684,6 +686,7 @@ div.jtitle {
           border-radius: 0;
 }
 //  Single Shop Item =================================================================================
+
 .whole {
     display: flex;
     flex-direction: row;
@@ -769,7 +772,7 @@ fieldset {
         color: $color__green;
         outline: none;
         &:focus {
-            background:rgba(133, 226, 214, 0.527);
+            background:rgba(176, 226, 220, 0.527);
         }
     }
 }
@@ -872,6 +875,67 @@ fieldset {
 }
 
 // Archive ===================================================================================
+
+.archive {
+.page-title {
+      border-bottom: 1px solid #e1e1e1;
+      width: 90%;
+      margin-left: 3rem;
+      }
+    h1{
+      font-size: 38px;
+      text-transform: uppercase;
+      font-family: $font__3;
+      padding: 3rem 0 2rem 0;
+      
+    }
+    .entry-header {
+        display: flex;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+        img {
+            width: 60vw; 
+        }
+        h2 {
+            display: flex;
+            align-self: left;
+            background-color: $color__green;
+            color: $color__background-body;
+            font-size: 33.6px;
+            font-size: 2.1rem;
+            padding: .25rem 1.5rem .25rem 1.5rem;
+            position: absolute;
+            margin: 2.25rem 0 0 4rem;
+            max-width: 40%;
+            a {
+                color: $color__background-body;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+    .entry-meta {
+        // display: flex;
+        width: 40vw;
+        background-color: $color__green;
+        color: $color__background-body;
+        padding: .25rem 1.5rem;
+        margin: 0 0 0 16rem;
+    }
+    .entry-content {
+        flex-direction: column;
+        padding: 0 3.5rem 0 3.5rem;
+        font-family: $font__2;
+    }
+    div.jbtn {
+        padding-left: 2.5rem;
+    }
+}
+
+
 .post-type-archive-product,
 .tax-product-type {
     .site-main {
@@ -914,7 +978,7 @@ fieldset {
         height: 18rem;
         margin: 0.5rem;
         border: 1px solid $color__background-pre;
-        .entry-header {
+        .entry-head {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
