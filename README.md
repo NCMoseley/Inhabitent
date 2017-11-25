@@ -1,7 +1,5 @@
 
 
-to be completed..........
-
 ![](http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg)
 
 # Inhabitents Interactive Webpage
@@ -15,14 +13,19 @@ I enjoyed this project, it was very nice to be able to work with so many differe
 
 ## Table of Contents
 
-* [Quick Start](#quick-start)
-* [Values](#values)
+* [Description](#description)
 * [Credits](#credits)
 * [References](#References)
 
-## Quick Start
+## Description
 
-## Values
+Inhabitents is project creating a custom WordPress Theme, developed using the Red Starter theme as a base. All the images and content and styling were provided by Red Academy. 
+
+I manipulated the page template hierarchy slightly, to include relevant pages, and to accurately style the sheets in the driest way possible. I used flexbox for the bulk of the construction, and I made sure that all elements are self-aligning and centering, to maintain composition as the page is manipulated. 
+
+There is JavaScript that opens and closes the search bar when clicked, automatically focuses the cursor into the input field, and changed the color of the navigation bar based on scroll position. I am console logging the scroll position which you can see if you inspect in the browser. 
+
+There are some custom styles and hover functions added to webpage. You will find that you can navigate through, and search for specific items based on tags, or based on posted dates.
 
 ## Credits
 

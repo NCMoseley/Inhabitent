@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+
 <!-- Hero -->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -41,11 +42,12 @@ get_header(); ?>
                   <?php foreach ( $terms as $term ) : ?>
 
                      <div class="product-type-block-wrapper">
-					  <!-- <div class="swrapper">	  -->
+
+					  
                         <img class="spic" src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
                         <div class"sdesc"><?php echo $term->description; ?></div>
                         <div><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></div>
-					  <!-- </div>	 -->
+					  
                      </div>
 
                   <?php endforeach; ?>
@@ -56,6 +58,7 @@ get_header(); ?>
          </section>
 
 <!-- Journal -->            
+
             <?php
                $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => '3' );
 
@@ -98,7 +101,7 @@ get_header(); ?>
           </ul>
                <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>
                <h4 class="more"></h4>
-		</div> <!-- adventures-container -->
+		</div>
     </section>
 
 			
@@ -117,8 +120,8 @@ get_header(); ?>
           
 		<?php endif; ?>
         
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
-<!-- <?php get_sidebar(); ?> -->
+
 <?php get_footer(); ?>
