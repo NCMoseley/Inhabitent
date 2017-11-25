@@ -749,6 +749,7 @@ div.jtitle {
 }
 
 //  Search ==========================================================================
+
 fieldset {
     border: 0;
     margin: 0;
@@ -791,37 +792,89 @@ fieldset {
 
 .search-results {
     .site-main {
-        width: 70vw;
-        height: 70vh;
+        width: 73%;
+        height: 750px;
         padding: 5rem 0 0 0;
-        h1 {
-            text-align: center;
+        margin-bottom: 15rem;
+        article{
+        padding: 0 0 0 5rem;
         }
-        a {
-            text-decoration: none;
-            color: $color__black;
-            padding: 0 0 0 2.5rem;
+        h1 {
+        text-transform: uppercase;
+        border-bottom: 1px solid #e1e1e1;
+        margin-left: 5rem;
+        padding: 0 0 1.5rem 0;
         }
         p {
-            width: 40vw;
-            padding: 0 0 0 5rem;
+        width: 50vw;
+        padding: 0 5rem 0 0;
+        }
+        a {
+        color: $color__green;
+        line-height: 1;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        }
+        .search-pagination{
+        display: flex;
+        border-top: 1px solid #e1e1e1;
+        font-family: Novecento Sans Web,sans-serif;
+        padding: 1.5rem 0 0 3rem;
+        text-transform: uppercase;
+        a {
+        background-color: #248a83;
+        color: $color__text_light;
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        margin-right: .25rem;
+        text-align: center;
+        }
+        span {
+        background-color: $color__brand-grey;
+        color: $color__text_light;
+        display: inline-block;
+        line-height: 1;
+        padding: .5rem .75rem;
+        margin-right: .25rem;
+        text-align: center;
+        }
+        p {
+        width: 40vw;
+        padding: 0 0 0 5rem;
+        }
         }
     }
-}
+}   
+
 
 .search-no-results {
+    .searchlogo{
+       padding: 3rem 0 0 8rem;
+    }
     .page-content {
         width: 70vw;
         height: 70vh;
-        padding: 10rem 0 0 0;
+        
     }
     fieldset label .search-field {
         width: 475px;
         background: $color__background-hr;
     }
+    p.sorry {
+        padding: 0 0 0 5rem;
+        font-size: 28px;
+        width: 50%;
+        text-align: center;
+
+    }
 }
 
+
 //  Begin Sidebar =================================================================================
+
 #secondary {
     width: 130vw;
 }

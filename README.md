@@ -37,4 +37,6 @@ Trnsfonter to generate my fonts. https://transfonter.org Fonts provided by Red A
 
 Filipe Merker on Stack Overflow provided me with the code for my navigation bar to 'toggle class' and change color. https://stackoverflow.com/questions/32856341/pure-js-add-and-remove-toggle-class-after-scrolling-x-amount
 
+Thanks to Dave Romsey on the following site for his help with pagination control. 
+https://wordpress.stackexchange.com/questions/30757/change-posts-per-page-count
 

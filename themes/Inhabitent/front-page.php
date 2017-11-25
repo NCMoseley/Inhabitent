@@ -9,25 +9,28 @@ get_header(); ?>
 
 <!-- Hero -->
 	<div id="primary" class="content-area">
+
 		<main id="main" class="site-main" role="main">
          
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+		<?php if ( is_home() && ! is_front_page() ) : ?>
+        
+			<header>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+			</header>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
             <section class="home-hero">
+
               <img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="logo" alt="full logo">
-              </section>
+
+            </section>
 
 <!-- Shop Stuff -->
-
-                       <h1 class="shopstuff">Shop Stuff</h1>
-            <section class="product-info-container">
+    <h1 class="shopstuff">Shop Stuff</h1>
+    <section class="product-info-container">
             
             <?php
                $terms = get_terms( array(
@@ -55,10 +58,9 @@ get_header(); ?>
                </div>
                
             <?php endif; ?>
-         </section>
+    </section>
 
 <!-- Journal -->            
-
             <?php
                $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => '3' );
 
@@ -85,8 +87,7 @@ get_header(); ?>
 
 
 <!-- Latest Adventures -->
-
-	        <section class="adventures-section">
+	<section class="adventures-section">
                 
                            <h2>Latest Adventures</h2>
 		              
@@ -102,23 +103,24 @@ get_header(); ?>
                <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>
                <h4 class="more"></h4>
 		</div>
+
     </section>
 
 			
-			<?php while ( have_posts() ) : the_post(); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
              
              
-				<?php get_template_part( 'template-parts/content' ); ?>
+		<?php get_template_part( 'template-parts/content' ); ?>
 
-			<?php endwhile; ?>
+	<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+		<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+	<?php else : ?>
               
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
           
-		<?php endif; ?>
+	<?php endif; ?>
         
 		</main>
 	</div>

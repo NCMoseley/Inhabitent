@@ -48,6 +48,5 @@ window.addEventListener('scroll', function(){
     console.log(scrollpos);
 });
 
-
      
 }(jQuery));
