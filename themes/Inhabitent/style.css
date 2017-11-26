@@ -1615,7 +1615,7 @@ fieldset {
     display: -ms-flexbox;
     display: flex;
     border-top: 1px solid #e1e1e1;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: Novecento Sans Web, sans-serif;
     padding: 1.5rem 0 0 3rem;
     text-transform: uppercase; }
     .search-results .site-main .search-pagination a {

@@ -51,19 +51,16 @@ h1.tent-logo {
 }
 
 .main-navigation a {
-    color: $color__background-hr    ;
+    color: $color__background-hr;
     padding: 1rem;
     text-transform: uppercase;
     font-family: $font__3;
-    font-weight: lighter;
-    // text-shadow: 0 1px 0 hsla(0, 0%, 30%, .8);
+    font-weight: lighter; 
 }
 
 .main-navigation a:hover {
     color: $color__text-screen;
 }
-
-
 
 #site-navigation.fade-in {
     h1.tent-logo {
@@ -86,20 +83,21 @@ h1.tent-logo {
         text-shadow: none;
     }
     ul li a:hover {
-            color: $color__black;
-        }
-        fieldset .search-submit {
+        color: $color__black;
+    }
+    fieldset .search-submit {
         display: inline;
         color: $color__green;
         font-size: 16px;
         line-height: 1;
         text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
         cursor: pointer;
-        :hover {
+         :hover {
             color: $color__black;
         }
-        }
+    }
 }
+
 .main-navigation.fade-in {
     background-color: hsla(0, 0%, 100%, .85);
     border-bottom: 1px solid #e1e1e1;
@@ -480,7 +478,7 @@ a.btn:hover {
     height: 500px;
     width: 85vw;
     justify-content: space-around;
-    justify-self: center; 
+    justify-self: center;
 }
 
 .thumbs {
@@ -551,7 +549,6 @@ div.jtitle {
 }
 
 // Journal Page ==================================================================================
-
 .blog {
     .entry-header {
         display: flex;
@@ -561,7 +558,7 @@ div.jtitle {
         align-items: center;
         padding-top: 20vh;
         img {
-            width: 60vw; // position: absolute;
+            width: 60vw; 
         }
         h2 {
             display: flex;
@@ -582,7 +579,6 @@ div.jtitle {
         }
     }
     .entry-meta {
-        // display: flex;
         width: 40vw;
         background-color: $color__green;
         color: $color__background-body;
@@ -600,7 +596,6 @@ div.jtitle {
 }
 
 // Single ==================================================================================
-
 .post-template-default {
     .entry-header {
         display: flex;
@@ -674,28 +669,28 @@ div.jtitle {
 }
 
 .form-submit {
-      input#submit.submit{
-          background-color: $color__green;
-          border: 1px solid $color__green;
-          color: $color__background-body;
-          font-size: 16px;
-          text-transform: uppercase;
-          cursor: pointer;
-          border-radius: 0;
-      }
-
+    input#submit.submit {
+        background-color: $color__green;
+        border: 1px solid $color__green;
+        color: $color__background-body;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 0;
+    }
 }
+
 .wpcf7-form-control.wpcf7-submit {
     background-color: $color__green;
-          border: 1px solid $color__green;
-          color: $color__background-body;
-          font-size: 16px;
-          text-transform: uppercase;
-          cursor: pointer;
-          border-radius: 0;
+    border: 1px solid $color__green;
+    color: $color__background-body;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
 }
-//  Single Shop Item =================================================================================
 
+//  Single Shop Item =============================================================================
 .whole {
     display: flex;
     flex-direction: row;
@@ -749,18 +744,17 @@ div.jtitle {
 }
 
 //  Search ==========================================================================
-
 fieldset {
     border: 0;
     margin: 0;
     padding: .7rem 1rem .4rem;
     .search-submit {
         display: inline;
-        color: $color__background-hr;   
+        color: $color__background-hr;
         font-size: 16px;
         line-height: 1;
-        cursor: pointer;    
-        :hover {
+        cursor: pointer;
+         :hover {
             color: $color__text-screen;
         }
     }
@@ -777,15 +771,14 @@ fieldset {
     }
     input.search-field {
         border: none;
-        background:rgba(250, 250, 250, 0.0);
+        background: rgba(250, 250, 250, 0.0);
         color: $color__green;
         outline: none;
         text-transform: uppercase;
         font-size: small;
         line-height: 2;
         &:focus {
-            background:rgba(#248a83, 0.5);
-            
+            background: rgba(#248a83, 0.5);
         }
     }
 }
@@ -796,77 +789,75 @@ fieldset {
         height: 1050px;
         padding: 5rem 0 0 0;
         margin-bottom: 15rem;
-        article{
-        padding: 0 0 0 5rem;
+        article {
+            padding: 0 0 0 5rem;
         }
         h1 {
-        text-transform: uppercase;
-        border-bottom: 1px solid #e1e1e1;
-        margin-left: 5rem;
-        padding: 0 0 1.5rem 0;
-        font-size: 38px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e1e1e1;
+            margin-left: 5rem;
+            padding: 0 0 1.5rem 0;
+            font-size: 38px;
         }
         p {
-        width: 50vw;
-        padding: 0 5rem 0 0;
+            width: 50vw;
+            padding: 0 5rem 0 0;
         }
         a {
-        color: $color__green;
-        line-height: 1;
-        font-size: 33px;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
+            color: $color__green;
+            line-height: 1;
+            font-size: 33px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
         }
-        .search-pagination{
-        display: flex;
-        border-top: 1px solid #e1e1e1;
-        font-family: Novecento Sans Web,sans-serif;
-        padding: 1.5rem 0 0 3rem;
-        text-transform: uppercase;
-        a {
-        background-color: $color__green;
-        color: $color__text_light;
-        display: inline-block;
-        line-height: 1;
-        text-decoration: none;
-        padding: .5rem .75rem;
-        margin-right: .25rem;
-        text-align: center;
-        font-size: 16px;
+        .search-pagination {
+            display: flex;
+            border-top: 1px solid #e1e1e1;
+            font-family: Novecento Sans Web, sans-serif;
+            padding: 1.5rem 0 0 3rem;
+            text-transform: uppercase;
+            a {
+                background-color: $color__green;
+                color: $color__text_light;
+                display: inline-block;
+                line-height: 1;
+                text-decoration: none;
+                padding: .5rem .75rem;
+                margin-right: .25rem;
+                text-align: center;
+                font-size: 16px;
+            }
+            span {
+                background-color: $color__brand-grey;
+                color: $color__text_light;
+                display: inline-block;
+                line-height: 1;
+                padding: .5rem .75rem;
+                margin-right: .25rem;
+                text-align: center;
+            }
+            p {
+                width: 40vw;
+                padding: 0 0 0 5rem;
+            }
         }
-        span {
-        background-color: $color__brand-grey;
-        color: $color__text_light;
-        display: inline-block;
-        line-height: 1;
-        padding: .5rem .75rem;
-        margin-right: .25rem;
-        text-align: center;
+        .jbtn {
+            padding: 0 0 0 4rem;
         }
-        p {
-        width: 40vw;
-        padding: 0 0 0 5rem;
-        }
-        }
-        .jbtn{
-        padding: 0 0 0 4rem;    
-        }
-        span.dots{
+        span.dots {
             background-color: $color__green;
         }
     }
-}   
-
+}
 
 .search-no-results {
-    .searchlogo{
-       padding: 3rem 0 0 8rem;
+    .searchlogo {
+        padding: 3rem 0 0 8rem;
     }
     .page-content {
         width: 70vw;
         height: 70vh;
-        
     }
     fieldset label .search-field {
         width: 475px;
@@ -877,13 +868,10 @@ fieldset {
         font-size: 28px;
         width: 50%;
         text-align: center;
-
     }
 }
 
-
 //  Begin Sidebar =================================================================================
-
 #secondary {
     width: 130vw;
 }
@@ -900,10 +888,6 @@ fieldset {
 .widget {
     margin: 0 0 1.5rem;
     padding: 3rem 0 0 3rem;
-}
-
-.widget_text {
-    // display: flex;
 }
 
 .widget-title {
@@ -949,19 +933,17 @@ fieldset {
 }
 
 // Archive ===================================================================================
-
 .archive {
-.page-title {
-      border-bottom: 1px solid #e1e1e1;
-      width: 90%;
-      margin-left: 3rem;
-      }
-    h1{
-      font-size: 38px;
-      text-transform: uppercase;
-      font-family: $font__3;
-      padding: 3rem 0 2rem 0;
-      
+    .page-title {
+        border-bottom: 1px solid #e1e1e1;
+        width: 90%;
+        margin-left: 3rem;
+    }
+    h1 {
+        font-size: 38px;
+        text-transform: uppercase;
+        font-family: $font__3;
+        padding: 3rem 0 2rem 0;
     }
     .entry-header {
         display: flex;
@@ -971,7 +953,7 @@ fieldset {
         align-items: center;
         padding-top: 20vh;
         img {
-            width: 60vw; 
+            width: 60vw;
         }
         h2 {
             display: flex;
@@ -1008,7 +990,6 @@ fieldset {
     }
 }
 
-
 .post-type-archive-product,
 .tax-product-type {
     .site-main {
@@ -1017,24 +998,24 @@ fieldset {
         justify-content: center;
         align-items: center;
     }
-    .page-title{
+    .page-title {
         display: none;
     }
     .product-type-list {
-    display: flex;
-    font-family: $font__3;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    justify-content: center;
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-    text-transform: uppercase;
-    li a{
-        text-decoration: none;
-        padding-right: 3rem;
-        color: $color__green;
-    }
+        display: flex;
+        font-family: $font__3;
+        font-size: 19.2px;
+        font-size: 1.2rem;
+        justify-content: center;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+        text-transform: uppercase;
+        li a {
+            text-decoration: none;
+            padding-right: 3rem;
+            color: $color__green;
+        }
     }
     .page-header {
         display: block;
@@ -1062,7 +1043,7 @@ fieldset {
             flex: 4;
             border-bottom: 4px solid $color__brand-grey;
             min-height: 200px;
-            max-height: 200px;  
+            max-height: 200px;
              :hover {
                 border-bottom: 0;
             }
@@ -1099,12 +1080,11 @@ fieldset {
 }
 
 // Taxonomy ===================================================================================
-
 .tax-product-type {
     article {
         height: 45vh;
     }
-    img{
+    img {
         height: 200px;
     }
     .entry-title {
@@ -1126,7 +1106,7 @@ fieldset {
     display: flex;
     background: url(../../images/dark-wood.png);
     background-size: 512px 512px;
-    color: $color__background-body; // width: $wide__screen-width;
+    color: $color__background-body; 
 }
 
 .footer-container {
