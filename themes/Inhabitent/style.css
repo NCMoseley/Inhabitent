@@ -1588,8 +1588,8 @@ fieldset {
       background: rgba(36, 138, 131, 0.5); }
 
 .search-results .site-main {
-  width: 73%;
-  height: 750px;
+  width: 900px;
+  height: 1050px;
   padding: 5rem 0 0 0;
   margin-bottom: 15rem; }
   .search-results .site-main article {
@@ -1598,13 +1598,15 @@ fieldset {
     text-transform: uppercase;
     border-bottom: 1px solid #e1e1e1;
     margin-left: 5rem;
-    padding: 0 0 1.5rem 0; }
+    padding: 0 0 1.5rem 0;
+    font-size: 38px; }
   .search-results .site-main p {
     width: 50vw;
     padding: 0 5rem 0 0; }
   .search-results .site-main a {
     color: #248a83;
     line-height: 1;
+    font-size: 33px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase; }
@@ -1624,7 +1626,8 @@ fieldset {
       text-decoration: none;
       padding: .5rem .75rem;
       margin-right: .25rem;
-      text-align: center; }
+      text-align: center;
+      font-size: 16px; }
     .search-results .site-main .search-pagination span {
       background-color: #808080;
       color: #fff;
@@ -1636,6 +1639,10 @@ fieldset {
     .search-results .site-main .search-pagination p {
       width: 40vw;
       padding: 0 0 0 5rem; }
+  .search-results .site-main .jbtn {
+    padding: 0 0 0 4rem; }
+  .search-results .site-main span.dots {
+    background-color: #248a83; }
 
 .search-no-results .searchlogo {
   padding: 3rem 0 0 8rem; }

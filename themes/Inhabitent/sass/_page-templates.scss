@@ -792,8 +792,8 @@ fieldset {
 
 .search-results {
     .site-main {
-        width: 73%;
-        height: 750px;
+        width: 900px;
+        height: 1050px;
         padding: 5rem 0 0 0;
         margin-bottom: 15rem;
         article{
@@ -804,6 +804,7 @@ fieldset {
         border-bottom: 1px solid #e1e1e1;
         margin-left: 5rem;
         padding: 0 0 1.5rem 0;
+        font-size: 38px;
         }
         p {
         width: 50vw;
@@ -812,6 +813,7 @@ fieldset {
         a {
         color: $color__green;
         line-height: 1;
+        font-size: 33px;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
@@ -823,7 +825,7 @@ fieldset {
         padding: 1.5rem 0 0 3rem;
         text-transform: uppercase;
         a {
-        background-color: #248a83;
+        background-color: $color__green;
         color: $color__text_light;
         display: inline-block;
         line-height: 1;
@@ -831,6 +833,7 @@ fieldset {
         padding: .5rem .75rem;
         margin-right: .25rem;
         text-align: center;
+        font-size: 16px;
         }
         span {
         background-color: $color__brand-grey;
@@ -845,6 +848,12 @@ fieldset {
         width: 40vw;
         padding: 0 0 0 5rem;
         }
+        }
+        .jbtn{
+        padding: 0 0 0 4rem;    
+        }
+        span.dots{
+            background-color: $color__green;
         }
     }
 }   
