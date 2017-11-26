@@ -23,17 +23,14 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			
 
-			  <?php while ( have_posts() ) : the_post(); ?>
-                
-            
-				<?php   get_template_part( 'template-parts/content', 'tax' ); ?>
-				
-                
+			<?php while ( have_posts() ) : the_post(); ?>
+                        
+			  <?php   get_template_part( 'template-parts/content', 'tax' ); ?>
+				             
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			  <?php the_posts_navigation(); ?>
 			
-
 		    <?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

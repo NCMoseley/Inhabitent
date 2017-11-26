@@ -1865,8 +1865,8 @@ fieldset {
     border-bottom: 4px solid #808080;
     min-height: 200px;
     max-height: 200px; }
-    .post-type-archive-product article img :hover,
-    .tax-product-type article img :hover {
+    .post-type-archive-product article img:hover,
+    .tax-product-type article img:hover {
       border-bottom: 0; }
   .post-type-archive-product article .entry-container,
   .tax-product-type article .entry-container {
