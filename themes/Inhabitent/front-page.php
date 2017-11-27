@@ -77,7 +77,7 @@ get_header(); ?>
 			<p class="jdate"><?php the_date(); ?><?php the_date(); ?> / <?php echo get_comments_number();?> <?php echo 'comments';?></p>
 			<div class="jtitle"><?php the_title(); ?></div>
 		
-            <a id="jbutton" href="<?php the_permalink(); ?>">Read Entry</a>
+            <a id="jbutton" class="jbutton" href="<?php the_permalink(); ?>">Read Entry</a>
 			<?php the_posts_navigation(); ?>
 			</div>
 
@@ -93,11 +93,11 @@ get_header(); ?>
 		              
         <div class="adventures-container">
           <ul class="adventure-list">
-            <div class="strap"><li class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3></li><a id="abutton" href="http://www.anmorecamp-rv.ca/">READ MORE</a></div>
-            <div class="strap"><li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3></li><a id="bbutton" href="http://www.capilanoriverrvpark.com/">READ MORE</a></div>
+            <div class="strap"><li class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3></li><a class="abutton" href="http://www.anmorecamp-rv.ca/">READ MORE</a></div>
+            <div class="strap"><li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3></li><a class="bbutton" href="http://www.capilanoriverrvpark.com/">READ MORE</a></div>
 		 <div class="failure">
-            <div class="strap"><li class="view"><h3><a href="http://www.metrovancouver.org/services/parks/parks-greenways-reserves/capilano-river-regional-park">Taking in the View at Big Mountain</a></h3></li><a id="cbutton" href="">READ MORE</a></div>
-            <div class="strap"><li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3></li><a id="dbutton" href="https://westcoastsports.ca/">READ MORE</a></div>
+            <div class="strap"><li class="view"><h3><a href="http://www.metrovancouver.org/services/parks/parks-greenways-reserves/capilano-river-regional-park">Taking in the View at Big Mountain</a></h3></li><a class="cbutton" href="">READ MORE</a></div>
+            <div class="strap"><li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3></li><a class="dbutton" href="https://westcoastsports.ca/">READ MORE</a></div>
 		</div>
           </ul>
                <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>

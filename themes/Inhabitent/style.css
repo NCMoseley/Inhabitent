@@ -433,7 +433,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #d99054; }
 
 input[type="text"],
 input[type="email"],
@@ -544,7 +544,7 @@ a {
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #5795af;
+    color: #f7fadc;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -728,6 +728,9 @@ object {
 .navigation {
   display: none; }
 
+body {
+  font-family: "Merriweather"; }
+
 .home .home-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,7 +765,7 @@ p.site-description {
       -ms-flex-pack: center;
           justify-content: center; }
 
-#site-navigation.main-navigation {
+.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,11 +792,10 @@ h1.tent-logo {
   text-transform: uppercase;
   font-family: "Novocento";
   font-weight: lighter; }
+  .main-navigation a:hover {
+    color: #f7fadc; }
 
-.main-navigation a:hover {
-  color: #5795af; }
-
-#site-navigation.fade-in h1.tent-logo {
+.fade-in h1.tent-logo {
   position: absolute;
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -804,7 +806,7 @@ h1.tent-logo {
   width: 50px;
   height: 50px; }
 
-#site-navigation.fade-in ul li a {
+.fade-in ul li a {
   color: #248a83;
   padding: 1rem;
   text-transform: uppercase;
@@ -812,24 +814,24 @@ h1.tent-logo {
   font-weight: lighter;
   text-shadow: none; }
 
-#site-navigation.fade-in ul li a:hover {
+.fade-in ul li a:hover {
   color: #000; }
 
-#site-navigation.fade-in fieldset .search-submit {
+.fade-in fieldset .search-submit {
   display: inline;
   color: #248a83;
   font-size: 16px;
   line-height: 1;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   cursor: pointer; }
-  #site-navigation.fade-in fieldset .search-submit :hover {
+  .fade-in fieldset .search-submit :hover {
     color: #000; }
 
 .main-navigation.fade-in {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1; }
   .main-navigation.fade-in a:hover {
-    color: #fff9c0; }
+    color: #000; }
 
 .adventures-section h2 {
   font-family: "Novocento";
@@ -892,7 +894,7 @@ h1.tent-logo {
     text-decoration: none;
     z-index: 2; }
 
-#abutton {
+.abutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,8 +915,10 @@ h1.tent-logo {
   text-decoration: none;
   position: absolute;
   margin: 15rem 0 0 1rem; }
+  .abutton:visited {
+    color: #fff; }
 
-#abutton:hover {
+.abutton:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff;
@@ -937,7 +941,7 @@ h1.tent-logo {
     text-decoration: none;
     z-index: 2; }
 
-#bbutton {
+.bbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,8 +962,10 @@ h1.tent-logo {
   text-decoration: none;
   position: absolute;
   margin: 10rem 0 0 1rem; }
+  .bbutton:visited {
+    color: #fff; }
 
-#bbutton:hover {
+.bbutton:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff;
@@ -989,7 +995,7 @@ h1.tent-logo {
     text-decoration: none;
     z-index: 2; }
 
-#cbutton {
+.cbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,8 +1016,10 @@ h1.tent-logo {
   text-decoration: none;
   position: absolute;
   margin: 10rem 0 0 1rem; }
+  .cbutton:visited {
+    color: #fff; }
 
-#cbutton:hover {
+.cbutton:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff;
@@ -1035,7 +1043,7 @@ h1.tent-logo {
     text-decoration: none;
     z-index: 2; }
 
-#dbutton {
+.dbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1056,8 +1064,10 @@ h1.tent-logo {
   text-decoration: none;
   position: absolute;
   margin: 10rem 0 0 1rem; }
+  .dbutton:visited {
+    color: #fff; }
 
-#dbutton:hover {
+.dbutton:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff;
@@ -1084,6 +1094,8 @@ a.morebutton {
   text-transform: uppercase;
   font-weight: lighter;
   text-decoration: none; }
+  a.morebutton:visited {
+    color: #fff; }
 
 a.morebutton:hover {
   display: -webkit-box;
@@ -1333,7 +1345,7 @@ div.jtitle {
   color: #248A83;
   padding-left: 1rem; }
 
-#jbutton {
+.jbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1356,8 +1368,10 @@ div.jtitle {
           align-items: center;
   text-transform: uppercase;
   text-decoration: none; }
+  .jbutton:visited {
+    color: #000; }
 
-#jbutton:hover {
+.jbutton:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff;
@@ -1487,7 +1501,7 @@ div.jtitle {
     text-transform: uppercase;
     font-size: 28px; }
 
-.form-submit input#submit.submit {
+.form-submit input.submit {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff;
@@ -1569,7 +1583,7 @@ fieldset {
     line-height: 1;
     cursor: pointer; }
     fieldset .search-submit :hover {
-      color: #5795af; }
+      color: #f7fadc; }
   fieldset label .search-field {
     width: 0px;
     -webkit-transition: .8s;
@@ -1579,13 +1593,13 @@ fieldset {
   fieldset input.search-field {
     border: none;
     background: rgba(250, 250, 250, 0);
-    color: #248a83;
+    color: #f7fadc;
     outline: none;
     text-transform: uppercase;
     font-size: small;
     line-height: 2; }
     fieldset input.search-field:focus {
-      background: rgba(36, 138, 131, 0.5); }
+      background: transparent; }
 
 .search-results .site-main {
   width: 900px;
@@ -1600,13 +1614,14 @@ fieldset {
     margin-left: 5rem;
     padding: 0 0 1.5rem 0;
     font-size: 38px; }
+  .search-results .site-main h2 {
+    font-size: 33px; }
   .search-results .site-main p {
     width: 50vw;
     padding: 0 5rem 0 0; }
   .search-results .site-main a {
     color: #248a83;
     line-height: 1;
-    font-size: 33px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase; }
@@ -1653,7 +1668,7 @@ fieldset {
 
 .search-no-results fieldset label .search-field {
   width: 475px;
-  background: #ccc; }
+  background: #248a83; }
 
 .search-no-results p.sorry {
   padding: 0 0 0 5rem;
