@@ -153,3 +153,19 @@ function set_posts_per_page( $query ) {
 
   return $query;
 }
+
+//remove more broad classes for less styling conflicts
+// function remove_broad_classes( $classes ) {
+// 	if ( is_front_page() || is_page_template( 'page_templates/about.php' ) ) {
+// 		unset( $classes[array_search( 'page', $classes)] ); //for removing
+// 		array_push($classes, 'white-header'); //for adding
+// 	}
+// 	if ( is_post_type_archive( 'product' ) || is_tax( 'product-type' ) ) {
+// 		unset( $classes[array_search( 'archive', $classes)] );
+// 	}
+// 	if ( is_singular( 'product' ) ) {
+// 		unset( $classes[array_search( 'single', $classes)] );
+// 	}
+// return $classes;
+// }
+// add_filter('body_class', 'remove_broad_classes' );

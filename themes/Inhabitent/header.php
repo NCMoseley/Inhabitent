@@ -18,6 +18,9 @@
 	</head>
 
 	<body <?php body_class(); ?> >
+	<body <?php if ( is_front_page() || is_page_template( 'page_templates/about.php' ) ){
+		body_class( "hero-header hero-header-ph" );
+	}?>> 
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
