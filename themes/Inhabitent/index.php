@@ -22,7 +22,7 @@ get_header(); ?>
 			
 				<?php get_template_part( 'template-parts/content' ); ?>
             <div class="jbtn">
-                <a id="jbutton" class="jbutton" href="<?php the_permalink(); ?>">Read Entry →</a>
+                <a  class="jbutton" href="<?php the_permalink(); ?>">Read Entry →</a>
 			<?php the_posts_navigation(); ?>
 			</div>
 

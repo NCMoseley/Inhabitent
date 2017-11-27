@@ -48,7 +48,7 @@ get_header(); ?>
 
 					  
                         <img class="spic" src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-                        <div class"sdesc"><?php echo $term->description; ?></div>
+                        <div><?php echo $term->description; ?></div>
                         <div><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></div>
 					  
                      </div>
@@ -77,7 +77,7 @@ get_header(); ?>
 			<p class="jdate"><?php the_date(); ?><?php the_date(); ?> / <?php echo get_comments_number();?> <?php echo 'comments';?></p>
 			<div class="jtitle"><?php the_title(); ?></div>
 		
-            <a id="jbutton" class="jbutton" href="<?php the_permalink(); ?>">Read Entry</a>
+            <a  class="jbutton" href="<?php the_permalink(); ?>">Read Entry</a>
 			<?php the_posts_navigation(); ?>
 			</div>
 
@@ -92,17 +92,20 @@ get_header(); ?>
                            <h2>Latest Adventures</h2>
 		              
         <div class="adventures-container">
-          <ul class="adventure-list">
-            <div class="strap"><li class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3></li><a class="abutton" href="http://www.anmorecamp-rv.ca/">READ MORE</a></div>
-            <div class="strap"><li class="beach"><h3><a href="">A Night with Friends at the Beach</a></h3></li><a class="bbutton" href="http://www.capilanoriverrvpark.com/">READ MORE</a></div>
-		 <div class="failure">
-            <div class="strap"><li class="view"><h3><a href="http://www.metrovancouver.org/services/parks/parks-greenways-reserves/capilano-river-regional-park">Taking in the View at Big Mountain</a></h3></li><a class="cbutton" href="">READ MORE</a></div>
-            <div class="strap"><li class="sky"><h3><a href="">Star-Gazing at the Night Sky</a></h3></li><a class="dbutton" href="https://westcoastsports.ca/">READ MORE</a></div>
-		</div>
-          </ul>
+          
+            <div class="strap"><div class="canoe"><h3><a class="text" href="">Getting Back to Nature in a Canoe</a></h3><a class="abutton" href="http://www.anmorecamp-rv.ca/">READ MORE</a></div></div>
+
+            <div class="strap"><div class="beach"><h3><a class="text" href="">A Night with Friends at the Beach</a></h3><a class="bbutton" href="http://www.capilanoriverrvpark.com/">READ MORE</a></div></div>
+		 
+            <div class="strap"><div class="view"><h3><a class="text" href="http://www.metrovancouver.org/services/parks/parks-greenways-reserves/capilano-river-regional-park">Taking in the View at Big Mountain</a></h3><a class="cbutton" href="">READ MORE</a></div></div>
+
+            <div class="strap"><div class="sky"><h3><a class="text" href="">Star-Gazing at the Night Sky</a></h3><a class="dbutton" href="https://westcoastsports.ca/">READ MORE</a>
+            </div></div>
+		
+          </div>
                <a href="https://github.com/NCMoseley?tab=repositories" class="morebutton">More Adventures</a>
                <h4 class="more"></h4>
-		</div>
+		
 
     </section>
 

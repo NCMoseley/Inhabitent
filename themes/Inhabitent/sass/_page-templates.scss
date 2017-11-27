@@ -111,6 +111,8 @@ h1.tent-logo {
 
 // Latest Adventures ==============================================================================
 .adventures-section {
+    margin: 0 auto;
+    width: 1280px;
     h2 {
         font-family: $font__3;
         font-weight: lighter;
@@ -119,63 +121,71 @@ h1.tent-logo {
     }
 }
 
-.adventures-container ul {
-    display: flex;
+.adventures-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em 1em;
     box-sizing: border-box;
-    list-style-type: none;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: $wide__screen-width;
-    height: 40rem;
-    padding-right: 5rem;
     h3 {
         padding: 1rem;
     }
 }
 
-.adventure-list {
-    display: flex;
+.strap:nth-child(1) { 
+    grid-row: 1/3;
+    grid-column: 1/3;
+    height: 540px;
 }
-
-.strap {
-    display: flex;
-    padding: 1rem 1rem 0 0;
+.strap:nth-child(2) { 
+    margin-right: 2rem;
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+.strap:nth-child(3) { 
+    margin-right: 2rem;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.strap:nth-child(4) { 
+    margin-right: 2rem;
+    grid-row: 2/3;
+    grid-column: 4/5;
 }
 
 .canoe {
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/canoe-girl.jpg) no-repeat top;
     background-size: cover;
     background-position: center;
-    height: 540px;
+    height: 575px;
     width: 540px;
     .text {
-        color: $color__text_light;
-        font-size: 54px;
-        font-family: $font__2;
-        font-weight: lighter;
-        text-decoration: none;
-        z-index: 2;
+    color: $color__text_light;
+    font-size: 54px;
+    font-family: $font__2;
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 2;
     }
 }
 
 .abutton {
-    display: flex;
     height: 50px;
     width: 150px;
     border: 1px solid $color__background-body;
     background-color: transparent;
-    font-size: 20px;
-    color: $color__background-body;
-    font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    position: absolute;
     margin: 15rem 0 0 1rem;
+    color: $color__text_light;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: $font__3;
+    font-weight: lighter;
+    text-decoration: none;
     &:visited{
     color: $color__background-body;
     }
@@ -190,13 +200,14 @@ h1.tent-logo {
 }
 
 .beach {
+    margin: 0 auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat top;
     background-size: cover;
     height: 250px;
-    width: 555px;
+    width: 600px;
     background-position: center;
     z-index: -10;
-    a {
+    .text {
         color: $color__text_light;
         font-size: $font__size_main;
         font-family: $font__2;
@@ -207,20 +218,21 @@ h1.tent-logo {
 }
 
 .bbutton {
-    display: flex;
     height: 50px;
     width: 150px;
-    border: 1px solid $color__border-2;
+    border: 1px solid $color__background-body;
     background-color: transparent;
-    font-size: 20px;
-    color: $color__background-body;
-    font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    position: absolute;
-    margin: 10rem 0 0 1rem;
+    margin: 15rem 0 0 1rem;
+    color: $color__text_light;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: $font__3;
+    font-weight: lighter;
+    text-decoration: none;
     &:visited{
     color: $color__background-body;
     }
@@ -234,20 +246,17 @@ h1.tent-logo {
     z-index: 12;
 }
 
-.failure {
-    display: flex;
-}
 
 .view {
+    margin: 0 auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat top;
     background-size: cover;
     height: 270px;
     width: 270px;
     z-index: -1;
-    border-right: 20px solid $color__background-body;
     background-position: center;
     z-index: -10;
-    a {
+    .text {
         color: $color__text_light;
         font-size: 1.5rem;
         font-family: $font__2;
@@ -258,20 +267,21 @@ h1.tent-logo {
 }
 
 .cbutton {
-    display: flex;
     height: 50px;
     width: 150px;
     border: 1px solid $color__background-body;
     background-color: transparent;
-    font-size: 20px;
-    color: $color__background-body;
-    font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    position: absolute;
-    margin: 10rem 0 0 1rem;
+    margin: 15rem 0 0 1rem;
+    color: $color__text_light;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: $font__3;
+    font-weight: lighter;
+    text-decoration: none;
     &:visited{
     color: $color__background-body;
     }
@@ -286,6 +296,7 @@ h1.tent-logo {
 }
 
 .sky {
+    margin: 0 auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), gray url(../../images/adventure-photos/night-sky.jpg) no-repeat top;
     background-size: cover;
     height: 270px;
@@ -293,7 +304,7 @@ h1.tent-logo {
     z-index: -1;
     background-position: center;
     z-index: -10;
-    a {
+    .text {
         color: $color__text_light;
         font-size: 1.5rem;
         font-family: $font__2;
@@ -304,20 +315,21 @@ h1.tent-logo {
 }
 
 .dbutton {
-    display: flex;
     height: 50px;
     width: 150px;
     border: 1px solid $color__background-body;
     background-color: transparent;
-    font-size: 20px;
-    color: $color__background-body;
-    font-family: $font__3;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    position: absolute;
-    margin: 10rem 0 0 1rem;
+    margin: 15rem 0 0 1rem;
+    color: $color__text_light;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: $font__3;
+    font-weight: lighter;
+    text-decoration: none;
     &:visited{
     color: $color__background-body;
     }
@@ -335,6 +347,7 @@ a.morebutton {
     display: flex;
     height: 50px;
     width: 250px;
+    margin-top: 2rem;
     background-color: $color__green;
     margin-left: 6rem;
     color: $color__text_light;
