@@ -731,7 +731,7 @@ object {
 body {
   font-family: "Merriweather"; }
 
-.home .home-hero {
+.home-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,8 +772,7 @@ p.site-description {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: absolute;
-  position: fixed; }
+  position: absolute; }
 
 h1.tent-logo {
   position: absolute;
@@ -795,37 +794,36 @@ h1.tent-logo {
   .main-navigation a:hover {
     color: #f7fadc; }
 
-.fade-in h1.tent-logo {
-  position: absolute;
-  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px 33px;
-  z-index: 10;
-  font-size: 2em;
-  left: 10px;
-  top: -15px;
-  width: 50px;
-  height: 50px; }
-
-.fade-in ul li a {
-  color: #248a83;
-  padding: 1rem;
-  text-transform: uppercase;
-  font-family: "Novocento";
-  font-weight: lighter;
-  text-shadow: none; }
-
-.fade-in ul li a:hover {
-  color: #000; }
-
-.fade-in fieldset .search-submit {
-  display: inline;
-  color: #248a83;
-  font-size: 16px;
-  line-height: 1;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  cursor: pointer; }
-  .fade-in fieldset .search-submit :hover {
+.fade-in {
+  position: fixed; }
+  .fade-in h1.tent-logo {
+    position: absolute;
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px;
+    z-index: 10;
+    font-size: 2em;
+    left: 10px;
+    top: -15px;
+    width: 50px;
+    height: 50px; }
+  .fade-in ul li a {
+    color: #248a83;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: "Novocento";
+    font-weight: lighter;
+    text-shadow: none; }
+  .fade-in ul li a:hover {
     color: #000; }
+  .fade-in fieldset .search-submit {
+    display: inline;
+    color: #248a83;
+    font-size: 16px;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    cursor: pointer; }
+    .fade-in fieldset .search-submit :hover {
+      color: #000; }
 
 .main-navigation.fade-in {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1923,6 +1921,65 @@ fieldset {
 .post-16 {
   width: 64vw;
   margin: 5rem 0 0 5rem; }
+
+.error-404 {
+  width: 64vw;
+  margin: 5rem 0 0 5rem;
+  font-family: "Novocento"; }
+  .error-404 h1 {
+    text-transform: uppercase; }
+  .error-404 p {
+    font-family: "Merriweather";
+    font-size: 16px; }
+
+.widget_recent_entries {
+  padding: 0; }
+  .widget_recent_entries ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #248A83;
+    list-style: none; }
+    .widget_recent_entries ul a {
+      text-decoration: none;
+      color: #248A83; }
+
+.widget-404 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.widget-404 a {
+  text-decoration: none;
+  color: #248A83; }
+
+.search-submit-404 {
+  height: 50px;
+  width: 150px;
+  background-color: #248A83;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 0 1rem;
+  color: #fff;
+  font-size: 20px;
+  padding: .7rem;
+  font-family: "Novocento";
+  font-weight: lighter;
+  text-decoration: none; }
+  .search-submit-404:visited {
+    color: #fff; }
+
+.search-submit-404:hover {
+  background-color: #248a83;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px; }
 
 #colophon.site-footer {
   display: -webkit-box;

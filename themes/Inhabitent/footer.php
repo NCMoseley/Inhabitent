@@ -7,7 +7,7 @@
 
 ?>
 
-			</div><!-- #content -->
+			</div>
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
@@ -26,7 +26,7 @@
                     <p><span class="day">Sunday:</span> Closed</p>
                 </div>  
                 <div class = "footer-image">
-                    <a href= "/"> <!--Home Link-->
+                    <a href= "/"> 
                         <img src=<?php echo get_template_directory_uri() . "/images/logos/inhabitent-logo-text.svg" ?> alt="">
                     </a>
             </div>
@@ -34,9 +34,9 @@
 					<div class="copyright">Copyright © 2017 Inhabitent</div>
 				</div>
 					<a href="<?php echo esc_url( 'https://https://github.com/NCMoseley/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'NateDogg' ); ?></a>
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+				</div>
+			</footer>
+		</div>
 
 		<?php wp_footer(); ?>
 

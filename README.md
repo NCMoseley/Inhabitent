@@ -10,6 +10,9 @@ A webpage dedicated to camping and glamping in the most hipster way possible.
 
 I enjoyed this project, it was very nice to be able to work with so many different layers, and create so much functionality so easily. I like the WordPress work flow, and I look forward to many more WP projects to come. 
 
+## Setup
+
+Initialize gulp in Inhabitent theme.  Use WP-Content for master. 
 
 ## Table of Contents
 
