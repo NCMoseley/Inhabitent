@@ -157,14 +157,20 @@ function set_posts_per_page( $query ) {
 // remove more broad classes for less styling conflicts
 function remove_broad_classes( $classes ) {
 	if ( is_front_page() || is_page_template( 'page_templates/about.php' ) ) {
-		unset( $classes[array_search( 'main-navigation', $classes)] ); //for removing
+		unset( $classes[array_search( 'main-navigation', $classes)] ); 
 	}
 	if ( is_post_type_archive( 'product' ) || is_tax( 'product-type' ) ) {
-		array_push($classes, 'fade-in'); //for adding
+		array_push($classes, 'fade-in-b'); 
 	}
 	if ( is_singular( 'product' ) ) {
-		array_push($classes, 'fade-in'); //for adding
+		array_push($classes, 'fade-in-b'); 
 	}
 return $classes;
 }
 add_filter('body_class', 'remove_broad_classes' );
+
+function add_nav_class() {
+    if (!( is_front_page() || is_page_template( 'page-templates/about.php' ) )) {
+        return "fixed";
+    }
+}

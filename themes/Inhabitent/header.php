@@ -30,10 +30,9 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 		</div>
         <div class="container">
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<nav id="site-navigation" class="main-navigation <?php echo add_nav_class(); ?>" role="navigation">
 					
-						<a href="http://localhost:8888/inhabitent/" rel="home">
-								<h1 class="tent-logo"></h1></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="tent-logo"></h1></a>
                    
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

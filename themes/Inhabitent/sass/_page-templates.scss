@@ -39,14 +39,12 @@ p.site-description {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    // position: fixed;
 }
 
 h1.tent-logo {
     position: absolute;
     background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
     background-size: 50px 33px;
-    z-index: 10;
     font-size: 2em;
     left: 10px;
     top: -15px;
@@ -55,7 +53,7 @@ h1.tent-logo {
 }
 
 .main-navigation a {
-    color: $color__background-hr;
+    color: $color__text_light;
     padding: 1rem;
     text-transform: uppercase;
     font-family: $font__3;
@@ -67,11 +65,11 @@ h1.tent-logo {
 
 .fade-in {
     position: fixed;
+    z-index: 1000;
     h1.tent-logo {
         position: absolute;
         background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
         background-size: 50px 33px;
-        z-index: 10;
         font-size: 2em;
         left: 10px;
         top: -15px;
@@ -107,6 +105,87 @@ h1.tent-logo {
     border-bottom: 1px solid $color__border-2;
     a:hover {
     color: $color__black;
+    }
+}
+.fade-in {
+    position: fixed;
+    h1.tent-logo {
+        position: absolute;
+        background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+        background-size: 50px 33px;
+        font-size: 2em;
+        left: 10px;
+        top: -15px;
+        width: 50px;
+        height: 50px;
+    }
+    ul li a {
+        color: $color__green;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-family: $font__3;
+        font-weight: lighter;
+        text-shadow: none;
+    }
+    ul li a:hover {
+        color: $color__black;
+    }
+    fieldset .search-submit {
+        display: inline;
+        color: $color__green;
+        font-size: 16px;
+        line-height: 1;
+        text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+        cursor: pointer;
+        :hover {
+        color: $color__black;
+        }
+    }
+}
+
+.main-navigation.fade-in {
+    background-color: hsla(0, 0%, 100%, .85);
+    border-bottom: 1px solid $color__border-2;
+    a:hover {
+    color: $color__black;
+    }
+}
+.fixed {
+    position: fixed;
+    z-index: 1000;
+    background-color: hsla(0, 0%, 100%, .85);
+    border-bottom: 1px solid $color__border-2;
+    h1.tent-logo {
+        position: absolute;
+        background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+        background-size: 50px 33px;
+        font-size: 2em;
+        left: 10px;
+        top: -15px;
+        width: 50px;
+        height: 50px;
+    }
+    ul li a {
+        color: $color__green;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-family: $font__3;
+        font-weight: lighter;
+        text-shadow: none;
+    }
+    ul li a:hover {
+        color: $color__black;
+    }
+    fieldset .search-submit {
+        display: inline;
+        color: $color__green;
+        font-size: 16px;
+        line-height: 1;
+        text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+        cursor: pointer;
+        :hover {
+        color: $color__black;
+        }
     }
 }
 
@@ -167,7 +246,6 @@ h1.tent-logo {
     font-family: $font__2;
     font-weight: lighter;
     text-decoration: none;
-    z-index: 2;
     }
 }
 
@@ -197,7 +275,6 @@ h1.tent-logo {
     border: 1px solid $color__green;
     color: $color__background-body;
     cursor: pointer;
-    z-index: 12;
 }
 
 .beach {
@@ -207,14 +284,12 @@ h1.tent-logo {
     height: 250px;
     width: 600px;
     background-position: center;
-    z-index: -10;
     .text {
         color: $color__text_light;
         font-size: $font__size_main;
         font-family: $font__2;
         font-weight: lighter;
         text-decoration: none;
-        z-index: 2;
     }
 }
 
@@ -244,7 +319,6 @@ h1.tent-logo {
     border: 1px solid $color__green;
     color: $color__background-body;
     cursor: pointer;
-    z-index: 12;
 }
 
 
@@ -254,16 +328,13 @@ h1.tent-logo {
     background-size: cover;
     height: 270px;
     width: 270px;
-    z-index: -1;
     background-position: center;
-    z-index: -10;
     .text {
         color: $color__text_light;
         font-size: 1.5rem;
         font-family: $font__2;
         font-weight: lighter;
         text-decoration: none;
-        z-index: 2;
     }
 }
 
@@ -293,7 +364,6 @@ h1.tent-logo {
     border: 1px solid $color__green;
     color: $color__background-body;
     cursor: pointer;
-    z-index: 12;
 }
 
 .sky {
@@ -302,16 +372,13 @@ h1.tent-logo {
     background-size: cover;
     height: 270px;
     width: 270px;
-    z-index: -1;
     background-position: center;
-    z-index: -10;
     .text {
         color: $color__text_light;
         font-size: 1.5rem;
         font-family: $font__2;
         font-weight: lighter;
         text-decoration: none;
-        z-index: 2;
     }
 }
 
@@ -341,7 +408,6 @@ h1.tent-logo {
     border: 1px solid $color__green;
     color: $color__background-body;
     cursor: pointer;
-    z-index: 12;
 }
 
 a.morebutton {
@@ -480,7 +546,6 @@ a.btn:hover {
     background-color: #175751;
     color: $color__background-body;
     cursor: pointer;
-    z-index: 12;
 }
 
 .sdesc {
@@ -580,7 +645,6 @@ div.jtitle {
     border: 1px solid $color__green;
     color: $color__background-body;
     cursor: pointer;
-    z-index: 12;
 }
 
 // Journal Page ==================================================================================

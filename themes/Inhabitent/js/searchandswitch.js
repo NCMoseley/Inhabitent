@@ -21,17 +21,20 @@ $(function() {
 
 
 // Function to replace the Nav bar when the page is scrolled down. 
-//use window.scrollY
+
 var scrollpos = window.scrollY;
 var nav = document.getElementById("site-navigation");
+// var navb = document.getElementById("site-navigation");
 // var label = document.getElementById('input');
 
 function add_class_on_scroll() {
     nav.classList.add("fade-in");
+    // navb.classList.add("fade-in-b");
 }
 
 function remove_class_on_scroll() {
     nav.classList.remove('fade-in');
+    // navb.classList.add("fade-in-b");
     // label.classList.remove('expanded');
 }
 
