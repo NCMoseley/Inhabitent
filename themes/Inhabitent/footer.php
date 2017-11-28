@@ -7,10 +7,9 @@
 
 ?>
 
-			</div>
-
+		</div>
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
+				
 					  <div class="footer-container">
                 <div class="contact-info">
                     <h3>CONTACT INFO</h3>
@@ -29,8 +28,8 @@
                     <a href= "/"> 
                         <img src=<?php echo get_template_directory_uri() . "/images/logos/inhabitent-logo-text.svg" ?> alt="">
                     </a>
-            </div>
-            <div class="copyright-container">
+                </div>
+                <div class="copyright-container">
 					<div class="copyright">Copyright © 2017 Inhabitent</div>
 				</div>
 					<a href="<?php echo esc_url( 'https://https://github.com/NCMoseley/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'NateDogg' ); ?></a>
