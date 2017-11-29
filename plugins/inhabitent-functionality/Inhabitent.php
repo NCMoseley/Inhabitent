@@ -1,13 +1,13 @@
 <?php
  /**
  *
- * @package   Inhabitent Functionality
+ * @package   inhabitent Functionality
  * @author    Nathan Moseley <ncmoseley@gmail.com>
  * @license   GPL-2.0+
  * @copyright 2017 ETS
  *
  * @wordpress-plugin
- * Plugin Name: Inhabitent Functionality
+ * Plugin Name: inhabitent Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
  * Author:      --

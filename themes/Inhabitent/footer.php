@@ -30,7 +30,7 @@
                     </a>
                 </div>
                 <div class="copyright-container">
-					<div class="copyright">Copyright © 2017 Inhabitent</div>
+					<div class="copyright">Copyright © 2017 inhabitent</div>
 				</div>
 					<a href="<?php echo esc_url( 'https://https://github.com/NCMoseley/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'NateDogg' ); ?></a>
 				</div>

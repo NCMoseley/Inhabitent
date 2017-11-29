@@ -10,7 +10,7 @@
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html( 'Nothing Found' ); ?></h1>
-	</header><!-- .page-header -->
+	</header>
 
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -19,7 +19,7 @@
 
 		<?php elseif ( is_search() ) : ?>
             
-			<img src="wp-content/themes/Inhabitent/images/logos/inhabitent-logo-full.svg" class="searchlogo" alt="full logo">
+			<img src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg" class="searchlogo" alt="full logo">
 			<p class="sorry"><?php echo esc_html( 'Sorry, but nothing matched your search terms. Please try again using some different keywords.' ); ?></p>
 			<?php get_search_form(); ?>
 
@@ -29,5 +29,5 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	</div>
+</section>

@@ -14,7 +14,7 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-    </header><!-- .entry-header -->    
+    </header> 
 
     <div class="wrap">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -25,7 +25,7 @@
               ?></span>
 
 		<div class="entry-meta">
-        </div><!-- .entry-meta -->
+        </div><
     
     
 	<div class="entry-content">
@@ -36,7 +36,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
               <div class="social-buttons">
                <button type="button" class="black-btn"><i class="fa fa-facebook"></i>Like</button>
@@ -44,12 +44,12 @@
                <button type="button" class="black-btn"><i class="fa fa-pinterest"></i>Pin</button>
               </div>
 
-    </div><!-- .wrap -->
+    </div>
 
 
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</div><!-- whole -->
-</article><!-- #post-## -->
+	</footer>
+</div>
+</article>

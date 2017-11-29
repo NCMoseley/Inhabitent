@@ -13,7 +13,7 @@
  * @copyright 2015 Your Name or Company Name
  *
  * @wordpress-plugin
- * Plugin Name:       Inhabitent Business Hours Widget 
+ * Plugin Name:       inhabitent Business Hours Widget 
  * Plugin URI:        http
  * Description:       Boss
  * Version:           1.0.0
@@ -54,7 +54,7 @@ class Tent_Biz_Hours extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Inhabitent Business Hours',
+			'inhabitent Business Hours',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
 				'description' => 'Add the store business hours.'

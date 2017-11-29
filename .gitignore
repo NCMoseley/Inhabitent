@@ -13,10 +13,10 @@ plugins/*
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!themes/Inhabitent/
+!themes/inhabitent/
 
 # Ignore packages #
-themes/Inhabitent/node_modules/
+themes/inhabitent/node_modules/
 
 # Ignore OS files #
 .DS_Store
