@@ -1389,7 +1389,7 @@ div.jtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40px;
+  min-height: 40px;
   width: 140px;
   border: 1px solid #000;
   margin: 1rem;
@@ -1878,7 +1878,7 @@ fieldset {
   display: block;
   width: 90%;
   text-align: center;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px solid #808080;
   margin-bottom: 5rem;
   padding-top: 5rem; }
 

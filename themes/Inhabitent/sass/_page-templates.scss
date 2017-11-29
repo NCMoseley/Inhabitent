@@ -621,7 +621,7 @@ div.jtitle {
 
 .jbutton {
     display: flex;
-    height: 40px;
+    min-height: 40px;
     width: 140px;
     border: 1px solid $color__black;
     margin: 1rem;
@@ -1122,7 +1122,7 @@ fieldset {
         display: block;
         width: 90%;
         text-align: center;
-        border-bottom: 1px dashed $color__brand-grey;
+        border-bottom: 1px solid $color__brand-grey;
         margin-bottom: 5rem;
         padding-top: 5rem;
     }
