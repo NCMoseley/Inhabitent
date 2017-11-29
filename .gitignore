@@ -5,6 +5,8 @@
 !themes/
 !uploads/
 !README.md
+!inhabpic1.png
+!inhabpic2.png
 
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*

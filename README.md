@@ -1,6 +1,6 @@
 
 
-                                     ![](http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg)
+![](http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg)
 
 # Inhabitents Interactive Webpage
 
