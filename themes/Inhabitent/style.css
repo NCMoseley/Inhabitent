@@ -1414,8 +1414,10 @@ div.jtitle {
 .jbutton:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
-  color: #fff;
   cursor: pointer; }
+
+a.jbutton:hover {
+  color: #fff; }
 
 .blog .entry-header {
   display: -webkit-box;
@@ -2109,3 +2111,6 @@ fieldset {
       align-self: flex-end;
   font-family: "Novocento";
   margin: 2rem 0 2rem 0; }
+
+a.jbutton:hover {
+  color: #fff; }

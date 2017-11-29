@@ -643,9 +643,13 @@ div.jtitle {
 .jbutton:hover {
     background-color: $color__green;
     border: 1px solid $color__green;
-    color: $color__background-body;
     cursor: pointer;
+}    
+
+a.jbutton:hover  {
+    color: $color__background-body;
 }
+
 
 // Journal Page ==================================================================================
 .blog {
@@ -1328,4 +1332,7 @@ fieldset {
     align-self: flex-end;
     font-family: $font__3;
     margin: 2rem 0 2rem 0;
+}
+a.jbutton:hover  {
+    color: $color__background-body;
 }
